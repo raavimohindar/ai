@@ -9,6 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 # Load the dataset
 file_path = r"G:\training_data\real_train_processed.csv"
+#file_path = r"/home/raavi/research/ai/train_data_without_len.csv"
 data = pd.read_csv(file_path)
 
 # Define features and target variables

@@ -125,7 +125,7 @@ y_pred_reg_goal_met = ["Yes" if error < threshold else "No" for error in y_pred_
 random_designs = np.random.uniform(
     low=[7.86159, 5.325177, 4.660957, 4.558468],
     high=[8.689125, 5.885722, 5.151584, 5.038306],
-    size=(200, 4)
+    size=(500, 4)
 )
 
 # Normalize test samples by waveguide width

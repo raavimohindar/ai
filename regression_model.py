@@ -14,7 +14,10 @@ df = pd.read_csv(r"G:\waveguide_ai\train_data_without_lengths.csv")
 
 # Define features and target variable
 features = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
-target = df['error']
+target = df[['error']]
+
+target_scaler = MinMaxScaler()
+target_scaled = target_scaler.fit_transform(target)
 
 # Normalize iris widths by the max waveguide width
 norm_factor = 15.7
@@ -25,7 +28,7 @@ scaler = MinMaxScaler()
 features_scaled = scaler.fit_transform(features)
 
 # Convert data to NumPy arrays
-features_np, target_np = np.array(features_scaled, dtype=np.float32), np.array(target, dtype=np.float32).reshape(-1, 1)
+features_np, target_np = np.array(features_scaled, dtype=np.float32), np.array(target_scaled, dtype=np.float32).reshape(-1, 1)
 
 # Split data into training and testing sets
 features_train, features_test, target_train, target_test = train_test_split(features_np, target_np, test_size=0.2, random_state=42)
@@ -89,7 +92,7 @@ test_r2 = r2_score(target_test, target_test_prediction)
 print(f"Test R^2 Score: {test_r2}")
 
 # Load and preprocess new test data
-def test_user_data(user_data_test_results, threshold=1.5):
+def test_user_data(user_data_test_results, threshold=0.75):
     user_data = user_data_test_results[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
     user_data = user_data / norm_factor
     user_data_scaled = scaler.transform(user_data)    
@@ -98,7 +101,7 @@ def test_user_data(user_data_test_results, threshold=1.5):
     model.eval()
 
     user_data_predictions = model(user_data_tensor).detach().numpy()    
-    
+
     user_data_test_results['Predicted_Error'] = user_data_predictions
     user_data_test_results['Goal_Met'] = user_data_test_results['Predicted_Error'] < threshold
         

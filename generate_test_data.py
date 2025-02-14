@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 
 random_designs = np.random.uniform(
-    low=[7.96159, 5.325177, 4.660957, 4.558468],
-    high=[8.289125, 5.885722, 5.151584, 5.038306],
+    low=[7.85, 5.32, 4.70, 4.6],
+    high=[8.15, 5.62, 5.0, 4.9],
     size=(500, 4)
 )
 

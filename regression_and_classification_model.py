@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
 # Load the dataset
-file_path = r"/home/raavi/research/ai/train_data_without_len.csv"
+file_path = r"G:\waveguide_ai\train_data_without_lengths.csv"
 data = pd.read_csv(file_path)
 
 # Extract features and target variables

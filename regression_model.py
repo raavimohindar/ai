@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, r2_score
@@ -11,29 +13,29 @@ from sklearn.metrics import mean_squared_error, r2_score
 df = pd.read_csv(r"G:\waveguide_ai\train_data_without_lengths.csv")
 
 # Define features and target variable
-X = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
-y = df['error']
+features = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
+target = df['error']
 
 # Normalize iris widths by the max waveguide width
-waveguide_width = 15.7
-X = X / waveguide_width
+norm_factor = 15.7
+features = features / norm_factor
 
 # Scale features using MinMaxScaler
 scaler = MinMaxScaler()
-X_scaled = scaler.fit_transform(X)
+features_scaled = scaler.fit_transform(features)
 
 # Convert data to NumPy arrays
-X_np, y_np = np.array(X_scaled, dtype=np.float32), np.array(y, dtype=np.float32).reshape(-1, 1)
+features_np, target_np = np.array(features_scaled, dtype=np.float32), np.array(target, dtype=np.float32).reshape(-1, 1)
 
 # Split data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X_np, y_np, test_size=0.2, random_state=42)
+features_train, features_test, target_train, target_test = train_test_split(features_np, target_np, test_size=0.2, random_state=42)
 
 # Convert to PyTorch tensors
-X_train_tensor = torch.tensor(X_train)
-X_test_tensor = torch.tensor(X_test)
+features_train_tensor = torch.tensor(features_train)
+features_test_tensor = torch.tensor(features_test)
 
-y_train_tensor = torch.tensor(y_train)
-y_test_tensor = torch.tensor(y_test)
+target_train_tensor = torch.tensor(target_train)
+target_test_tensor = torch.tensor(target_test)
 
 # Define Neural Network Model for Regression
 class RegressionNN(nn.Module):
@@ -55,15 +57,15 @@ class RegressionNN(nn.Module):
 # Initialize model, loss function, and optimizer
 model = RegressionNN()
 criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.01)
+optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Training loop
-epochs = 100
+epochs = 1000
 for epoch in range(epochs):
-    model.train()
-    optimizer.zero_grad()
-    y_pred = model(X_train_tensor)
-    loss = criterion(y_pred, y_train_tensor)
+    model.train()    
+    optimizer.zero_grad()    
+    target_prediction = model(features_train_tensor)    
+    loss = criterion(target_prediction, target_train_tensor)
     loss.backward()
     optimizer.step()
     if epoch % 10 == 0:
@@ -71,43 +73,43 @@ for epoch in range(epochs):
 
 # Evaluate the model
 model.eval()
-y_pred_test = model(X_test_tensor).detach().numpy()
 
-y_train_pred = model(X_train_tensor).detach().numpy()
-rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
-r2 = r2_score(y_test, y_pred_test)
-
-train_rmse = np.sqrt(mean_squared_error(y_train, y_train_pred))
-test_rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
+target_train_prediction = model(features_train_tensor).detach().numpy()
+train_rmse = np.sqrt(mean_squared_error(target_train, target_train_prediction))
 print(f"Train RMSE: {train_rmse}")
+
+target_test_prediction = model(features_test_tensor).detach().numpy()
+test_rmse = np.sqrt(mean_squared_error(target_test, target_test_prediction))
 print(f"Test RMSE: {test_rmse}")
 
-train_r2 = r2_score(y_train, y_train_pred)
-test_r2 = r2_score(y_test, y_pred_test)
+train_r2 = r2_score(target_train, target_train_prediction)
 print(f"Train R^2 Score: {train_r2}")
+
+test_r2 = r2_score(target_test, target_test_prediction)
 print(f"Test R^2 Score: {test_r2}")
 
 # Load and preprocess new test data
-def test_new_data(test_df, threshold=1.17):
-    test_X = test_df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
-    test_X = test_X / waveguide_width
-    test_X_scaled = scaler.transform(test_X)
-    test_X_tensor = torch.tensor(test_X_scaled, dtype=torch.float32)
+def test_user_data(user_data_test_results, threshold=1.5):
+    user_data = user_data_test_results[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
+    user_data = user_data / norm_factor
+    user_data_scaled = scaler.transform(user_data)    
+    user_data_tensor = torch.tensor(user_data_scaled, dtype=torch.float32)
     
     model.eval()
+
+    user_data_predictions = model(user_data_tensor).detach().numpy()    
     
-    test_predictions = model(test_X_tensor).detach().numpy()    
-    test_df['Predicted_Error'] = test_predictions
-    test_df['Goal_Met'] = test_df['Predicted_Error'] < threshold
+    user_data_test_results['Predicted_Error'] = user_data_predictions
+    user_data_test_results['Goal_Met'] = user_data_test_results['Predicted_Error'] < threshold
         
-    return test_df
+    return user_data_test_results
 
 # Example usage
-test_df = pd.read_csv(r"G:\waveguide_ai\test_data_without_lengths.csv")
-results = test_new_data(test_df)
+user_data = pd.read_csv(r"G:\waveguide_ai\test_data_without_lengths.csv")
+results = test_user_data(user_data)
 #print(results[results['Goal_Met']].sort_values(by='Predicted_Error').to_string(index=False))
 
-test_df_sorted = results[results['Goal_Met']].sort_values(by='Predicted_Error')
-test_df_sorted.to_excel("filtered_results.xlsx", index=False)
-print("Results saved to filtered_results.xlsx")
+sorted_results = results[results['Goal_Met']].sort_values(by='Predicted_Error')
+sorted_results.to_excel("regression_results.xlsx", index=False)
+print("Results saved to regression_results.xlsx")
 

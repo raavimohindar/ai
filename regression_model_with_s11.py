@@ -17,11 +17,11 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # Load data
-df = pd.read_csv(r"/home/raavi/research/ai/train_data_without_lengths.csv")
+df = pd.read_csv(r"/home/raavi/research/ai/train_data_with_S11.csv")
 
 # Define features and target variable
-X = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
-y = df[['error']]
+X = df[['iris_1', 'iris_2', 'iris_3', 'iris_4'] + [f'S_11_{i}' for i in range(100)]]
+y = df[['error'] + [f'S_11_{i}' for i in range(100)]]
 
 # Normalize target variable
 y_scaler = MinMaxScaler()
@@ -29,14 +29,14 @@ y_scaled = y_scaler.fit_transform(y)
 
 # Normalize iris widths by the max waveguide width
 waveguide_width = 15.7
-X = X / waveguide_width
+X.iloc[:, :4] = X.iloc[:, :4] / waveguide_width
 
 # Scale features using MinMaxScaler
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X)
 
 # Convert data to NumPy arrays
-X_np, y_np = np.array(X_scaled, dtype=np.float32), np.array(y_scaled, dtype=np.float32).reshape(-1, 1)
+X_np, y_np = np.array(X_scaled, dtype=np.float32), np.array(y_scaled, dtype=np.float32)
 
 # Split data into training, validation, and testing sets
 X_train, X_temp, y_train, y_temp = train_test_split(X_np, y_np, test_size=0.3, random_state=42)
@@ -54,9 +54,9 @@ y_test_tensor = torch.tensor(y_test, dtype=torch.float32).to(device)
 class RegressionNN(nn.Module):
     def __init__(self):
         super(RegressionNN, self).__init__()
-        self.fc1 = nn.Linear(4, 64)
-        self.fc2 = nn.Linear(64, 32)
-        self.fc3 = nn.Linear(32, 1)
+        self.fc1 = nn.Linear(X_train.shape[1], 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64, y_train.shape[1])
         self.relu = nn.ReLU()
         self.dropout = nn.Dropout(0.2)
     
@@ -129,7 +129,7 @@ if best_model_state:
     print(f"Best hyperparameters: {best_hyperparams}, Best RMSE: {best_rmse}")
 
 # Load and preprocess new test data
-def test_new_data(test_df, threshold=1.17):
+def predict_S11(test_df):
     test_X = test_df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
     test_X = test_X / waveguide_width
     test_X_scaled = scaler.transform(test_X)
@@ -139,15 +139,17 @@ def test_new_data(test_df, threshold=1.17):
     model.load_state_dict(torch.load("best_model.pth"))
     model.eval()
     
-    test_predictions = y_scaler.inverse_transform(model(test_X_tensor).cpu().detach().numpy())
-    test_df['Predicted_Error'] = test_predictions
-    test_df['Goal_Met'] = test_df['Predicted_Error'] < threshold
+    S11_predictions = model(test_X_tensor).cpu().detach().numpy()
+    S11_predictions = y_scaler.inverse_transform(S11_predictions)
+    
+    for i in range(100):
+        test_df[f'Predicted_S_11_{i}'] = S11_predictions[:, i]
     
     return test_df
 
 # Example usage
 test_df = pd.read_csv("test_data_without_lengths.csv")
-results = test_new_data(test_df)
-test_df_sorted = test_df[test_df['Goal_Met']].sort_values(by='Predicted_Error')
-test_df_sorted.to_excel("filtered_results.xlsx", index=False)
-print("Results saved to filtered_results.xlsx")
+results = predict_S11(test_df)
+test_df.to_excel("predicted_S11_results.xlsx", index=False)
+print("Results saved to predicted_S11_results.xlsx")
+

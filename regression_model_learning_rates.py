@@ -8,7 +8,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load data
-df = pd.read_csv("train_data_without_len.csv")
+df = pd.read_csv(r"/home/raavi/research/ai/train_data_without_lengths.csv")
 
 # Define features and target variable
 X = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
@@ -17,7 +17,6 @@ y = df[['error']]
 # Normalize target variable
 y_scaler = MinMaxScaler()
 y_scaled = y_scaler.fit_transform(y)
-
 
 # Normalize iris widths by the max waveguide width
 waveguide_width = 15.7
@@ -59,6 +58,7 @@ class RegressionNN(nn.Module):
 # Initialize model, loss function, and optimizer
 model = RegressionNN()
 criterion = nn.MSELoss()
+
 learning_rates = [0.001, 0.005, 0.01]
 batch_sizes = [16, 32, 64]
 best_rmse = float('inf')
@@ -95,33 +95,33 @@ for lr in learning_rates:
 print(f"Best hyperparameters: {best_hyperparams}, Best RMSE: {best_rmse}")
 
 # Training loop
-epochs = 100
-for epoch in range(epochs):
-    model.train()
-    optimizer.zero_grad()
-    y_pred = model(X_train_tensor)
-    loss = criterion(y_pred, y_train_tensor)
-    loss.backward()
-    optimizer.step()
-    if epoch % 10 == 0:
-        print(f"Epoch {epoch}, Loss: {loss.item()}")
+# epochs = 100
+# for epoch in range(epochs):
+#     model.train()
+#     optimizer.zero_grad()
+#     y_pred = model(X_train_tensor)
+#     loss = criterion(y_pred, y_train_tensor)
+#     loss.backward()
+#     optimizer.step()
+#     if epoch % 10 == 0:
+#         print(f"Epoch {epoch}, Loss: {loss.item()}")
 
-# Evaluate the model
-model.eval()
-y_pred_test = model(X_test_tensor).detach().numpy()
+# # Evaluate the model
+# model.eval()
+# y_pred_test = model(X_test_tensor).detach().numpy()
 
-y_train_pred = y_scaler.inverse_transform(model(X_train_tensor).detach().numpy())
-rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
-r2 = r2_score(y_test, y_pred_test)
+# y_train_pred = y_scaler.inverse_transform(model(X_train_tensor).detach().numpy())
+# rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
+# r2 = r2_score(y_test, y_pred_test)
 
-train_rmse = np.sqrt(mean_squared_error(y_train, y_train_pred))
-test_rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
-print(f"Train RMSE: {train_rmse}")
-print(f"Test RMSE: {test_rmse}")
-train_r2 = r2_score(y_train, y_train_pred)
-test_r2 = r2_score(y_test, y_pred_test)
-print(f"Train R^2 Score: {train_r2}")
-print(f"Test R^2 Score: {test_r2}")
+# train_rmse = np.sqrt(mean_squared_error(y_train, y_train_pred))
+# test_rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
+# print(f"Train RMSE: {train_rmse}")
+# print(f"Test RMSE: {test_rmse}")
+# train_r2 = r2_score(y_train, y_train_pred)
+# test_r2 = r2_score(y_test, y_pred_test)
+# print(f"Train R^2 Score: {train_r2}")
+# print(f"Test R^2 Score: {test_r2}")
 
 # Load and preprocess new test data
 def test_new_data(test_df, threshold=1.17):

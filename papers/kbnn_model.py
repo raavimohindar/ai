@@ -46,7 +46,6 @@ def generate_training_data(n_samples):
         torch.tensor(s11, dtype=torch.float32).view(-1, 1)
     )
     
-
 # Loss Function Incorporating Goal Function Error
 def loss_function(predicted_s11, true_s11, goal_error_lambda=0.001):
     mse_loss = nn.MSELoss()(predicted_s11, true_s11)
@@ -81,7 +80,6 @@ def plot_s11_results(freq_samples, s11_pred, s11_true):
     plt.show()
 
 # Initialize Model
-
 
 input_size, freq_size, output_size = 3, 1, 1  # KBNN structure
 

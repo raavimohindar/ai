@@ -21,15 +21,19 @@ class KBNN(nn.Module):
         self.activation = nn.SiLU()  # Swish activation for better gradient flow
 
     def forward(self, iris_dims, freq_samples):
-        # Input Mapping
+    # Input Mapping
         x = self.activation(self.input_mapping(iris_dims))
 
         # Frequency Mapping
         f = self.activation(self.freq_mapping(freq_samples))
 
+        # Resize x to match f using a Linear Transformation
+        x_resized = nn.Linear(x.shape[1], f.shape[1]).to(x.device)(x)
+
         # Output Mapping (Prediction of S11)
-        s11_pred = self.output_mapping(f + x)  # Combining mapped features
-        return s11_pred
+        s11_pred = self.output_mapping(f + x_resized)  # Now dimensions match
+        return s11_pred    
+     
 
 # Generate Training Data (Simulated based on Prior Knowledge)
 def generate_training_data(n_samples):
@@ -41,6 +45,7 @@ def generate_training_data(n_samples):
         torch.tensor(freq_samples, dtype=torch.float32),
         torch.tensor(s11, dtype=torch.float32).view(-1, 1)
     )
+    
 
 # Loss Function Incorporating Goal Function Error
 def loss_function(predicted_s11, true_s11, goal_error_lambda=0.001):
@@ -49,7 +54,7 @@ def loss_function(predicted_s11, true_s11, goal_error_lambda=0.001):
     return mse_loss + goal_error_lambda * goal_error
 
 # Training Function
-def train_kbnn(model, optimizer, iris_dims, freq_samples, s11_true, epochs=500, l1_lambda=0.0005):
+def train_kbnn(model, optimizer, iris_dims, freq_samples, s11_true, epochs=500, l1_lambda=0.0001):
     for epoch in range(epochs):
         optimizer.zero_grad()
         s11_pred = model(iris_dims, freq_samples)
@@ -76,8 +81,14 @@ def plot_s11_results(freq_samples, s11_pred, s11_true):
     plt.show()
 
 # Initialize Model
-input_size, freq_size, hidden_sizes, output_size = 3, 1, [10, 15], 1  # KBNN structure
+
+
+input_size, freq_size, output_size = 3, 1, 1  # KBNN structure
+
+hidden_sizes = [20, 30, 20]  # Increase layers and neurons
+
 kbnn_model = KBNN(input_size, freq_size, hidden_sizes, output_size)
+
 optimizer = optim.Adam(kbnn_model.parameters(), lr=0.01)
 
 # Generate Training Data

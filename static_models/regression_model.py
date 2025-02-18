@@ -10,22 +10,21 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load data
-df = pd.read_csv(r"G:\waveguide_ai\train_data_without_lengths.csv")
+#df = pd.read_csv(r"G:\waveguide_ai\train_data_without_lengths.csv")
+df = pd.read_csv(r"/home/raavi/research/ai/static_models/train_data/train_data_without_lengths.csv")
+
+scaler = MinMaxScaler()
+
+target = df[['error']].copy()
+target['error_scaled'] = np.log1p(target['error']) 
+target_scaled = pd.DataFrame(scaler.fit_transform(target[['error_scaled']]), columns=['error_scaled'])
 
 # Define features and target variable
-features = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
-target = df[['error']]
 
-target_scaler = MinMaxScaler()
-target_scaled = target_scaler.fit_transform(target)
-
-# Normalize iris widths by the max waveguide width
 norm_factor = 15.7
-features = features / norm_factor
-
-# Scale features using MinMaxScaler
-scaler = MinMaxScaler()
-features_scaled = scaler.fit_transform(features)
+features = df[['iris_1', 'iris_2', 'iris_3', 'iris_4']]
+features /= norm_factor
+features_scaled = pd.DataFrame(scaler.fit_transform(features), columns=features.columns)
 
 # Convert data to NumPy arrays
 features_np, target_np = np.array(features_scaled, dtype=np.float32), np.array(target_scaled, dtype=np.float32).reshape(-1, 1)
@@ -108,7 +107,7 @@ def test_user_data(user_data_test_results, threshold=0.75):
     return user_data_test_results
 
 # Example usage
-user_data = pd.read_csv(r"G:\waveguide_ai\test_data_without_lengths.csv")
+user_data = pd.read_csv(r"/home/raavi/research/ai/static_models/train_data/test_data_without_lengths.csv")
 results = test_user_data(user_data)
 #print(results[results['Goal_Met']].sort_values(by='Predicted_Error').to_string(index=False))
 

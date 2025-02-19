@@ -1,0 +1,90 @@
+
+INFO in project [test_1]
+       in input file "test_1"
+       load_ini_file:
+       element_path = C:\Users\mraavimohanrao\AppData\Roaming\Mician\mWave Wizard 12.0\Ini\element.ini
+
+INFO in project [test_1]
+       in input file "test_1"
+       load_ini_file:
+       bessel_path  = C:\Program Files (x86)\Mician\mWave Wizard 12.0\Bin\bessel.dat
+
+INFO in project [test_1]
+       in input file "test_1"
+       load_ini_file:
+       font_path    = C:\Program Files (x86)\Mician\mWave Wizard 12.0\Bin\font.dat
+
+INFO in project [test_1]
+       in input file "test_1"
+       ----------------------------------------------------------------------
+
+INFO in project [test_1]
+       in input file "test_1"
+       mWaveWizard 12.0 (64 bit HASP key edition) running from DLL on 14 of 14 physical cores
+
+INFO in project [test_1]
+       in input file "test_1"
+       ----------------------------------------------------------------------
+
+INFO in project [test_1]
+       in input file "test_1"
+       Filter synthesis (spline) of [test_1]
+
+INFO in project [test_1]
+       in input file "test_1"
+       ----------------------------------------------------------------------
+
+INFO in project [test_1]
+       in input file "test_1"
+
+INFO in project [test_1]
+       in input file "test_1"
+       Frequency range = [15.495154 GHz - 15.495154 GHz ] with 1 steps
+
+INFO in project [test_1]
+       in input file "test_1"
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+       Initializing circuit: [filter_element]
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+         - Initializing Nodes
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+         - Initializing elements
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+            - Initialize [port]
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+            - Initialize [tune_iris]
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+            - Initialize [port]
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+         - Initializing waveguides
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+            - Waveguide at node 1 and 2
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+            - Waveguide at node 3 and 4
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+       Elapsed time = 4.252 seconds
+
+INFO in project [test_1.filter_element]
+       in input file "test_1.filter_element"
+       Info in mWave Wizard (PID 11112):
+       Used memory at simulation end = 63705088 Peak memory = 121200640

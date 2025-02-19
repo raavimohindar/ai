@@ -1,0 +1,39 @@
+<VariableSettings>
+  <VersionInformation VersionsNumber="12.000" ProductName="µWave Wizard" ProductVersion="12.0.0.133" MainVersion="12" SubVersion="0" Release="0" Built="133"/>
+  <PreviosValuesList/>
+  <Variables CopyRule="Copy_of*">
+    <Variable Name="a" Type="var" ValueType="Double" Expression="15.799" Maximum="0.05" Minimum="-0.05" Steps="0.1" Comment="" UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="b" Type="var" ValueType="Double" Expression="7.899" Maximum="0.05" Minimum="-0.05" Steps="0.1" Comment="" UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_a2_1" Type="opt" ValueType="Double" Expression="9.40795800000000128" Maximum="9.8783559" Minimum="8.9375601" Steps="0.1" Comment="test_3_a2_1 is the tunned variable for iris 1." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_a2_2" Type="opt" ValueType="Double" Expression="6.753208" Maximum="7.0908684" Minimum="6.4155476" Steps="0.1" Comment="test_3_a2_2 is the tunned variable for iris 2." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_a2_3" Type="opt" ValueType="Double" Expression="5.854923" Maximum="6.14766915" Minimum="5.56217685" Steps="0.1" Comment="test_3_a2_3 is the tunned variable for iris 3." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_a2_4" Type="opt" ValueType="Double" Expression="5.66657" Maximum="5.9498985" Minimum="5.3832415" Steps="0.1" Comment="test_3_a2_4 is the tunned variable for iris 4." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_a2_5" Type="opt" ValueType="Double" Expression="5.625323" Maximum="5.90658915" Minimum="5.34405685" Steps="0.1" Comment="test_3_a2_5 is the tunned variable for iris 5." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_l_1" Type="opt" ValueType="Double" Expression="8.75739500000000128" Maximum="9.19526475" Minimum="8.31952525" Steps="0.1" Comment="test_3_l_1 is the length of resonator 1." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_l_2" Type="opt" ValueType="Double" Expression="10.3547049999999984" Maximum="10.87244025" Minimum="9.83696975" Steps="0.1" Comment="test_3_l_2 is the length of resonator 2." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_l_3" Type="opt" ValueType="Double" Expression="10.786934" Maximum="11.3262807" Minimum="10.2475873" Steps="0.1" Comment="test_3_l_3 is the length of resonator 3." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="test_3_l_4" Type="opt" ValueType="Double" Expression="10.867264" Maximum="11.4106272" Minimum="10.3239008" Steps="0.1" Comment="test_3_l_4 is the length of resonator 4." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+  </Variables>
+</VariableSettings>

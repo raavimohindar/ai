@@ -1,0 +1,701 @@
+
+INFO in project [test_1]
+       in input file "test_1"
+       load_ini_file:
+       element_path = C:\Users\mraavimohanrao\AppData\Roaming\Mician\mWave Wizard 12.0\Ini\element.ini
+
+INFO in project [test_1]
+       in input file "test_1"
+       load_ini_file:
+       bessel_path  = C:\Program Files (x86)\Mician\mWave Wizard 12.0\Bin\bessel.dat
+
+INFO in project [test_1]
+       in input file "test_1"
+       load_ini_file:
+       font_path    = C:\Program Files (x86)\Mician\mWave Wizard 12.0\Bin\font.dat
+
+INFO in project [test_1]
+       in input file "test_1"
+       ----------------------------------------------------------------------
+
+INFO in project [test_1]
+       in input file "test_1"
+       mWaveWizard 12.0 (64 bit HASP key edition) running from DLL on 14 of 14 physical cores
+
+INFO in project [test_1]
+       in input file "test_1"
+       ----------------------------------------------------------------------
+
+INFO in project [test_1]
+       in input file "test_1"
+       Optimization of [test_3]
+
+INFO in project [test_1]
+       in input file "test_1"
+       ----------------------------------------------------------------------
+
+INFO in project [test_1]
+       in input file "test_1"
+
+INFO in project [test_1]
+       in input file "test_1"
+       Frequency range = [12.400000 GHz - 18.000000 GHz ] with 501 steps
+
+INFO in project [test_1]
+       in input file "test_1"
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+       Initializing circuit: [test_3_half]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+         - Initializing Nodes
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+         - Initializing elements
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Initialize [port]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Initialize [tune_iris]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Initialize [iris_2]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Initialize [iris_3]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Initialize [iris_4]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Initialize [port]
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+         - Initializing waveguides
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Waveguide at node 1 and 2
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Waveguide at node 3 and 4
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Waveguide at node 5 and 6
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Waveguide at node 7 and 8
+
+INFO in project [test_1.test_3_half]
+       in input file "test_1.test_3_half"
+            - Waveguide at node 9 and 10
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+       Initializing circuit: [test_3]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+         - Initializing Nodes
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+         - Initializing elements
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [port]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [test_3_half]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [tune_iris]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [test_3_half]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [port]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+         - Initializing waveguides
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Waveguide at node 1 and 2
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Waveguide at node 3 and 4
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Waveguide at node 5 and 6
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Waveguide at node 7 and 8
+ 0/500     analyze actual= 6.64 best= 6.64
+ 1/500     analyze actual= 6.23 best= 6.23
+ 2/500     analyze actual= 7.15 best= 6.23
+ 3/500     analyze actual= 5.26 best= 5.26
+ 4/500     analyze actual= 5.40 best= 5.26
+ 5/500     analyze actual= 5.28 best= 5.26
+ 6/500     analyze actual= 5.25 best= 5.25
+ 7/500     analyze actual= 5.71 best= 5.25
+ 8/500     analyze actual= 5.32 best= 5.25
+ 9/500     analyze actual= 5.22 best= 5.22
+ 10/500    analyze actual= 5.74 best= 5.22
+ 11/500    analyze actual= 5.47 best= 5.22
+ 12/500    analyze actual= 5.20 best= 5.20
+ 13/500    analyze actual= 5.22 best= 5.20
+ 14/500    analyze actual= 5.22 best= 5.20
+ 15/500    analyze actual= 5.20 best= 5.20
+ 16/500    analyze actual= 5.20 best= 5.20
+ 17/500    analyze actual= 5.21 best= 5.20
+ 18/500    analyze actual= 5.20 best= 5.20
+ 19/500    analyze actual= 5.20 best= 5.20
+ 20/500    analyze actual= 5.19 best= 5.19
+ 21/500    analyze actual= 5.19 best= 5.19
+ 22/500    analyze actual= 5.20 best= 5.19
+ 23/500    analyze actual= 5.19 best= 5.19
+ 24/500    analyze actual= 5.19 best= 5.19
+ 25/500    analyze actual= 5.19 best= 5.19
+ 26/500    analyze actual= 5.20 best= 5.19
+ 27/500    analyze actual= 5.19 best= 5.19
+ 28/500    analyze actual= 5.18 best= 5.18
+ 29/500    analyze actual= 5.27 best= 5.18
+ 30/500    analyze actual= 5.17 best= 5.17
+ 31/500    analyze actual= 19.79 best= 5.17
+ 32/500    analyze actual= 18.35 best= 5.17
+ 33/500    analyze actual= 5.18 best= 5.17
+ 34/500    analyze actual= 5.33 best= 5.17
+ 35/500    analyze actual= 5.28 best= 5.17
+ 36/500    analyze actual= 5.17 best= 5.17
+ 37/500    analyze actual= 5.20 best= 5.17
+ 38/500    analyze actual= 5.20 best= 5.17
+ 39/500    analyze actual= 5.17 best= 5.17
+ 40/500    analyze actual= 10.92 best= 5.17
+ 41/500    analyze actual= 11.54 best= 5.17
+ 42/500    analyze actual= 5.18 best= 5.17
+ 43/500    analyze actual= 5.45 best= 5.17
+ 44/500    analyze actual= 5.64 best= 5.17
+ 45/500    analyze actual= 5.17 best= 5.17
+ 46/500    analyze actual= 5.16 best= 5.16
+ 47/500    analyze actual= 5.24 best= 5.16
+ 48/500    analyze actual= 5.16 best= 5.16
+ 49/500    analyze actual= 5.17 best= 5.16
+ 50/500    analyze actual= 5.20 best= 5.16
+ 51/500    analyze actual= 5.16 best= 5.16
+ 52/500    analyze actual= 5.21 best= 5.16
+ 53/500    analyze actual= 5.25 best= 5.16
+ 54/500    analyze actual= 5.15 best= 5.15
+ 55/500    analyze actual= 5.15 best= 5.15
+ 56/500    analyze actual= 5.21 best= 5.15
+ 57/500    analyze actual= 5.15 best= 5.15
+ 58/500    analyze actual= 5.15 best= 5.15
+ 59/500    analyze actual= 5.15 best= 5.15
+ 60/500    analyze actual= 5.15 best= 5.15
+ 61/500    analyze actual= 5.16 best= 5.15
+ 62/500    analyze actual= 5.14 best= 5.14
+ 63/500    analyze actual= 5.14 best= 5.14
+ 64/500    analyze actual= 5.15 best= 5.14
+ 65/500    analyze actual= 5.14 best= 5.14
+ 66/500    analyze actual= 5.14 best= 5.14
+ 67/500    analyze actual= 5.14 best= 5.14
+ 68/500    analyze actual= 5.14 best= 5.14
+ 69/500    analyze actual= 5.14 best= 5.14
+ 70/500    analyze actual= 5.41 best= 5.14
+ 71/500    analyze actual= 5.37 best= 5.14
+ 72/500    analyze actual= 5.14 best= 5.14
+ 73/500    analyze actual= 5.15 best= 5.14
+ 74/500    analyze actual= 5.15 best= 5.14
+ 75/500    analyze actual= 5.14 best= 5.14
+ 76/500    analyze actual= 5.14 best= 5.14
+ 77/500    analyze actual= 5.14 best= 5.14
+ 78/500    analyze actual= 5.14 best= 5.14
+ 79/500    analyze actual= 5.13 best= 5.13
+ 80/500    analyze actual= 5.14 best= 5.13
+ 81/500    analyze actual= 5.13 best= 5.13
+ 82/500    analyze actual= 5.14 best= 5.13
+ 83/500    analyze actual= 5.17 best= 5.13
+ 84/500    analyze actual= 5.13 best= 5.13
+ 85/500    analyze actual= 5.12 best= 5.12
+ 86/500    analyze actual= 5.13 best= 5.12
+ 87/500    analyze actual= 5.12 best= 5.12
+ 88/500    analyze actual= 5.13 best= 5.12
+ 89/500    analyze actual= 5.12 best= 5.12
+ 90/500    analyze actual= 5.12 best= 5.12
+ 91/500    analyze actual= 5.13 best= 5.12
+ 92/500    analyze actual= 5.12 best= 5.12
+ 93/500    analyze actual= 5.12 best= 5.12
+ 94/500    analyze actual= 5.12 best= 5.12
+ 95/500    analyze actual= 5.12 best= 5.12
+ 96/500    analyze actual= 5.12 best= 5.12
+ 97/500    analyze actual= 5.12 best= 5.12
+ 98/500    analyze actual= 5.12 best= 5.12
+ 99/500    analyze actual= 5.12 best= 5.12
+ 100/500   analyze actual= 5.12 best= 5.12
+ 101/500   analyze actual= 5.12 best= 5.12
+ 102/500   analyze actual= 5.12 best= 5.12
+ 103/500   analyze actual= 5.12 best= 5.12
+ 104/500   analyze actual= 5.12 best= 5.12
+ 105/500   analyze actual= 5.12 best= 5.12
+ 106/500   analyze actual= 5.12 best= 5.12
+ 107/500   analyze actual= 5.12 best= 5.12
+ 108/500   analyze actual= 5.12 best= 5.12
+ 109/500   analyze actual= 5.12 best= 5.12
+ 110/500   analyze actual= 5.15 best= 5.12
+ 111/500   analyze actual= 5.12 best= 5.12
+ 112/500   analyze actual= 5.14 best= 5.12
+ 113/500   analyze actual= 5.16 best= 5.12
+ 114/500   analyze actual= 5.11 best= 5.11
+ 115/500   analyze actual= 5.12 best= 5.11
+ 116/500   analyze actual= 5.12 best= 5.11
+ 117/500   analyze actual= 5.11 best= 5.11
+ 118/500   analyze actual= 5.12 best= 5.11
+ 119/500   analyze actual= 5.11 best= 5.11
+ 120/500   analyze actual= 5.11 best= 5.11
+ 121/500   analyze actual= 5.12 best= 5.11
+ 122/500   analyze actual= 5.11 best= 5.11
+ 123/500   analyze actual= 5.11 best= 5.11
+ 124/500   analyze actual= 5.11 best= 5.11
+ 125/500   analyze actual= 5.11 best= 5.11
+ 126/500   analyze actual= 5.11 best= 5.11
+ 127/500   analyze actual= 5.11 best= 5.11
+ 128/500   analyze actual= 5.11 best= 5.11
+ 129/500   analyze actual= 5.11 best= 5.11
+ 130/500   analyze actual= 5.11 best= 5.11
+ 131/500   analyze actual= 5.11 best= 5.11
+ 132/500   analyze actual= 5.11 best= 5.11
+ 133/500   analyze actual= 5.11 best= 5.11
+ 134/500   analyze actual= 5.11 best= 5.11
+ 135/500   analyze actual= 5.11 best= 5.11
+ 136/500   analyze actual= 5.12 best= 5.11
+ 137/500   analyze actual= 5.13 best= 5.11
+ 138/500   analyze actual= 5.11 best= 5.11
+ 139/500   analyze actual= 5.11 best= 5.11
+ 140/500   analyze actual= 5.11 best= 5.11
+ 141/500   analyze actual= 5.11 best= 5.11
+ 142/500   analyze actual= 5.15 best= 5.11
+ 143/500   analyze actual= 5.15 best= 5.11
+ 144/500   analyze actual= 5.11 best= 5.11
+ 145/500   analyze actual= 5.12 best= 5.11
+ 146/500   analyze actual= 5.12 best= 5.11
+ 147/500   analyze actual= 5.11 best= 5.11
+ 148/500   analyze actual= 5.11 best= 5.11
+ 149/500   analyze actual= 5.11 best= 5.11
+ 150/500   analyze actual= 5.11 best= 5.11
+ 151/500   analyze actual= 5.11 best= 5.11
+ 152/500   analyze actual= 5.11 best= 5.11
+ 153/500   analyze actual= 5.11 best= 5.11
+ 154/500   analyze actual= 5.11 best= 5.11
+ 155/500   analyze actual= 5.11 best= 5.11
+ 156/500   analyze actual= 5.11 best= 5.11
+ 157/500   analyze actual= 5.11 best= 5.11
+ 158/500   analyze actual= 5.11 best= 5.11
+ 159/500   analyze actual= 5.11 best= 5.11
+ 160/500   analyze actual= 5.11 best= 5.11
+ 161/500   analyze actual= 5.11 best= 5.11
+ 162/500   analyze actual= 5.11 best= 5.11
+ 163/500   analyze actual= 5.11 best= 5.11
+ 164/500   analyze actual= 5.11 best= 5.11
+ 165/500   analyze actual= 5.11 best= 5.11
+ 166/500   analyze actual= 5.11 best= 5.11
+ 167/500   analyze actual= 5.11 best= 5.11
+ 168/500   analyze actual= 5.11 best= 5.11
+ 169/500   analyze actual= 5.11 best= 5.11
+ 170/500   analyze actual= 5.11 best= 5.11
+ 171/500   analyze actual= 5.11 best= 5.11
+ 172/500   analyze actual= 5.11 best= 5.11
+ 173/500   analyze actual= 5.11 best= 5.11
+ 174/500   analyze actual= 5.11 best= 5.11
+ 175/500   analyze actual= 5.11 best= 5.11
+ 176/500   analyze actual= 5.11 best= 5.11
+ 177/500   analyze actual= 5.11 best= 5.11
+ 178/500   analyze actual= 5.11 best= 5.11
+ 179/500   analyze actual= 5.11 best= 5.11
+ 180/500   analyze actual= 5.11 best= 5.11
+ 181/500   analyze actual= 5.11 best= 5.11
+ 182/500   analyze actual= 5.11 best= 5.11
+ 183/500   analyze actual= 5.11 best= 5.11
+ 184/500   analyze actual= 5.11 best= 5.11
+ 185/500   analyze actual= 5.11 best= 5.11
+ 186/500   analyze actual= 5.11 best= 5.11
+ 187/500   analyze actual= 5.11 best= 5.11
+ 188/500   analyze actual= 5.11 best= 5.11
+ 189/500   analyze actual= 5.11 best= 5.11
+ 190/500   analyze actual= 5.11 best= 5.11
+ 191/500   analyze actual= 5.11 best= 5.11
+ 192/500   analyze actual= 5.11 best= 5.11
+ 193/500   analyze actual= 5.11 best= 5.11
+ 194/500   analyze actual= 5.11 best= 5.11
+ 195/500   analyze actual= 5.11 best= 5.11
+ 196/500   analyze actual= 5.11 best= 5.11
+ 197/500   analyze actual= 5.11 best= 5.11
+ 198/500   analyze actual= 5.11 best= 5.11
+ 199/500   analyze actual= 5.11 best= 5.11
+ 200/500   analyze actual= 5.10 best= 5.10
+ 201/500   analyze actual= 5.10 best= 5.10
+ 202/500   analyze actual= 5.11 best= 5.10
+ 203/500   analyze actual= 5.10 best= 5.10
+ 204/500   analyze actual= 5.10 best= 5.10
+ 205/500   analyze actual= 5.11 best= 5.10
+ 206/500   analyze actual= 5.10 best= 5.10
+ 207/500   analyze actual= 5.10 best= 5.10
+ 208/500   analyze actual= 5.10 best= 5.10
+ 209/500   analyze actual= 5.10 best= 5.10
+ 210/500   analyze actual= 5.10 best= 5.10
+ 211/500   analyze actual= 5.10 best= 5.10
+ 212/500   analyze actual= 5.10 best= 5.10
+ 213/500   analyze actual= 5.10 best= 5.10
+ 214/500   analyze actual= 5.10 best= 5.10
+ 215/500   analyze actual= 5.10 best= 5.10
+ 216/500   analyze actual= 5.10 best= 5.10
+ 217/500   analyze actual= 5.10 best= 5.10
+ 218/500   analyze actual= 5.11 best= 5.10
+ 219/500   analyze actual= 5.10 best= 5.10
+ 220/500   analyze actual= 5.10 best= 5.10
+ 221/500   analyze actual= 5.10 best= 5.10
+ 222/500   analyze actual= 5.10 best= 5.10
+ 223/500   analyze actual= 5.10 best= 5.10
+ 224/500   analyze actual= 5.10 best= 5.10
+ 225/500   analyze actual= 5.10 best= 5.10
+ 226/500   analyze actual= 5.10 best= 5.10
+ 227/500   analyze actual= 5.10 best= 5.10
+ 228/500   analyze actual= 5.10 best= 5.10
+ 229/500   analyze actual= 5.10 best= 5.10
+ 230/500   analyze actual= 5.10 best= 5.10
+ 231/500   analyze actual= 5.10 best= 5.10
+ 232/500   analyze actual= 5.10 best= 5.10
+ 233/500   analyze actual= 5.10 best= 5.10
+ 234/500   analyze actual= 5.10 best= 5.10
+ 235/500   analyze actual= 5.10 best= 5.10
+ 236/500   analyze actual= 5.10 best= 5.10
+ 237/500   analyze actual= 5.10 best= 5.10
+ 238/500   analyze actual= 5.13 best= 5.10
+ 239/500   analyze actual= 5.13 best= 5.10
+ 240/500   analyze actual= 5.10 best= 5.10
+ 241/500   analyze actual= 5.10 best= 5.10
+ 242/500   analyze actual= 5.10 best= 5.10
+ 243/500   analyze actual= 5.10 best= 5.10
+ 244/500   analyze actual= 5.10 best= 5.10
+ 245/500   analyze actual= 5.10 best= 5.10
+ 246/500   analyze actual= 5.10 best= 5.10
+ 247/500   analyze actual= 5.12 best= 5.10
+ 248/500   analyze actual= 5.12 best= 5.10
+ 249/500   analyze actual= 5.10 best= 5.10
+ 250/500   analyze actual= 5.10 best= 5.10
+ 251/500   analyze actual= 5.10 best= 5.10
+ 252/500   analyze actual= 5.10 best= 5.10
+ 253/500   analyze actual= 5.10 best= 5.10
+ 254/500   analyze actual= 5.10 best= 5.10
+ 255/500   analyze actual= 5.10 best= 5.10
+ 256/500   analyze actual= 5.10 best= 5.10
+ 257/500   analyze actual= 5.10 best= 5.10
+ 258/500   analyze actual= 5.10 best= 5.10
+ 259/500   analyze actual= 5.10 best= 5.10
+ 260/500   analyze actual= 5.10 best= 5.10
+ 261/500   analyze actual= 5.10 best= 5.10
+ 262/500   analyze actual= 5.10 best= 5.10
+ 263/500   analyze actual= 5.10 best= 5.10
+ 264/500   analyze actual= 5.10 best= 5.10
+ 265/500   analyze actual= 5.10 best= 5.10
+ 266/500   analyze actual= 5.10 best= 5.10
+ 267/500   analyze actual= 5.10 best= 5.10
+ 268/500   analyze actual= 5.10 best= 5.10
+ 269/500   analyze actual= 5.10 best= 5.10
+ 270/500   analyze actual= 5.10 best= 5.10
+ 271/500   analyze actual= 5.10 best= 5.10
+ 272/500   analyze actual= 5.10 best= 5.10
+ 273/500   analyze actual= 5.10 best= 5.10
+ 274/500   analyze actual= 5.10 best= 5.10
+ 275/500   analyze actual= 5.10 best= 5.10
+ 276/500   analyze actual= 5.10 best= 5.10
+ 277/500   analyze actual= 5.10 best= 5.10
+ 278/500   analyze actual= 5.10 best= 5.10
+ 279/500   analyze actual= 5.10 best= 5.10
+ 280/500   analyze actual= 5.11 best= 5.10
+ 281/500   analyze actual= 5.11 best= 5.10
+ 282/500   analyze actual= 5.10 best= 5.10
+ 283/500   analyze actual= 5.10 best= 5.10
+ 284/500   analyze actual= 5.10 best= 5.10
+ 285/500   analyze actual= 5.10 best= 5.10
+ 286/500   analyze actual= 5.10 best= 5.10
+ 287/500   analyze actual= 5.10 best= 5.10
+ 288/500   analyze actual= 5.10 best= 5.10
+ 289/500   analyze actual= 5.10 best= 5.10
+ 290/500   analyze actual= 5.10 best= 5.10
+ 291/500   analyze actual= 5.10 best= 5.10
+ 292/500   analyze actual= 5.10 best= 5.10
+ 293/500   analyze actual= 5.10 best= 5.10
+ 294/500   analyze actual= 5.10 best= 5.10
+ 295/500   analyze actual= 5.10 best= 5.10
+ 296/500   analyze actual= 5.10 best= 5.10
+ 297/500   analyze actual= 5.10 best= 5.10
+ 298/500   analyze actual= 5.10 best= 5.10
+ 299/500   analyze actual= 5.10 best= 5.10
+ 300/500   analyze actual= 5.10 best= 5.10
+ 301/500   analyze actual= 5.10 best= 5.10
+ 302/500   analyze actual= 5.10 best= 5.10
+ 303/500   analyze actual= 5.10 best= 5.10
+ 304/500   analyze actual= 5.10 best= 5.10
+ 305/500   analyze actual= 5.10 best= 5.10
+ 306/500   analyze actual= 5.10 best= 5.10
+ 307/500   analyze actual= 5.10 best= 5.10
+ 308/500   analyze actual= 5.10 best= 5.10
+ 309/500   analyze actual= 5.10 best= 5.10
+ 310/500   analyze actual= 5.10 best= 5.10
+ 311/500   analyze actual= 5.10 best= 5.10
+ 312/500   analyze actual= 5.10 best= 5.10
+ 313/500   analyze actual= 5.10 best= 5.10
+ 314/500   analyze actual= 5.10 best= 5.10
+ 315/500   analyze actual= 5.10 best= 5.10
+ 316/500   analyze actual= 5.10 best= 5.10
+ 317/500   analyze actual= 5.10 best= 5.10
+ 318/500   analyze actual= 5.10 best= 5.10
+ 319/500   analyze actual= 5.10 best= 5.10
+ 320/500   analyze actual= 5.10 best= 5.10
+ 321/500   analyze actual= 5.10 best= 5.10
+ 322/500   analyze actual= 5.10 best= 5.10
+ 323/500   analyze actual= 5.10 best= 5.10
+ 324/500   analyze actual= 5.10 best= 5.10
+ 325/500   analyze actual= 5.10 best= 5.10
+ 326/500   analyze actual= 5.10 best= 5.10
+ 327/500   analyze actual= 5.10 best= 5.10
+ 328/500   analyze actual= 5.10 best= 5.10
+ 329/500   analyze actual= 5.10 best= 5.10
+ 330/500   analyze actual= 5.10 best= 5.10
+ 331/500   analyze actual= 5.10 best= 5.10
+ 332/500   analyze actual= 5.10 best= 5.10
+ 333/500   analyze actual= 5.10 best= 5.10
+ 334/500   analyze actual= 5.10 best= 5.10
+ 335/500   analyze actual= 5.10 best= 5.10
+ 336/500   analyze actual= 5.10 best= 5.10
+ 337/500   analyze actual= 5.10 best= 5.10
+ 338/500   analyze actual= 5.10 best= 5.10
+ 339/500   analyze actual= 5.10 best= 5.10
+ 340/500   analyze actual= 5.10 best= 5.10
+ 341/500   analyze actual= 5.10 best= 5.10
+ 342/500   analyze actual= 5.10 best= 5.10
+ 343/500   analyze actual= 5.10 best= 5.10
+ 344/500   analyze actual= 5.10 best= 5.10
+ 345/500   analyze actual= 5.10 best= 5.10
+ 346/500   analyze actual= 5.10 best= 5.10
+ 347/500   analyze actual= 5.10 best= 5.10
+ 348/500   analyze actual= 5.10 best= 5.10
+ 349/500   analyze actual= 5.10 best= 5.10
+ 350/500   analyze actual= 5.10 best= 5.10
+ 351/500   analyze actual= 5.10 best= 5.10
+ 352/500   analyze actual= 5.10 best= 5.10
+ 353/500   analyze actual= 5.10 best= 5.10
+ 354/500   analyze actual= 5.10 best= 5.10
+ 355/500   analyze actual= 5.10 best= 5.10
+ 356/500   analyze actual= 5.10 best= 5.10
+ 357/500   analyze actual= 5.10 best= 5.10
+ 358/500   analyze actual= 5.10 best= 5.10
+ 359/500   analyze actual= 5.10 best= 5.10
+ 360/500   analyze actual= 5.10 best= 5.10
+ 361/500   analyze actual= 5.10 best= 5.10
+ 362/500   analyze actual= 5.10 best= 5.10
+ 363/500   analyze actual= 5.10 best= 5.10
+ 364/500   analyze actual= 5.10 best= 5.10
+ 365/500   analyze actual= 5.10 best= 5.10
+ 366/500   analyze actual= 5.10 best= 5.10
+ 367/500   analyze actual= 5.10 best= 5.10
+ 368/500   analyze actual= 5.10 best= 5.10
+ 369/500   analyze actual= 5.10 best= 5.10
+ 370/500   analyze actual= 5.10 best= 5.10
+ 371/500   analyze actual= 5.10 best= 5.10
+ 372/500   analyze actual= 5.10 best= 5.10
+ 373/500   analyze actual= 5.10 best= 5.10
+ 374/500   analyze actual= 5.11 best= 5.10
+ 375/500   analyze actual= 5.11 best= 5.10
+ 376/500   analyze actual= 5.10 best= 5.10
+ 377/500   analyze actual= 5.10 best= 5.10
+ 378/500   analyze actual= 5.10 best= 5.10
+ 379/500   analyze actual= 5.10 best= 5.10
+ 380/500   analyze actual= 5.10 best= 5.10
+ 381/500   analyze actual= 5.10 best= 5.10
+ 382/500   analyze actual= 5.10 best= 5.10
+ 383/500   analyze actual= 5.10 best= 5.10
+ 384/500   analyze actual= 5.10 best= 5.10
+ 385/500   analyze actual= 5.10 best= 5.10
+ 386/500   analyze actual= 5.10 best= 5.10
+ 387/500   analyze actual= 5.10 best= 5.10
+ 388/500   analyze actual= 5.10 best= 5.10
+ 389/500   analyze actual= 5.10 best= 5.10
+ 390/500   analyze actual= 5.10 best= 5.10
+ 391/500   analyze actual= 5.10 best= 5.10
+ 392/500   analyze actual= 5.10 best= 5.10
+ 393/500   analyze actual= 5.10 best= 5.10
+ 394/500   analyze actual= 5.10 best= 5.10
+ 395/500   analyze actual= 5.10 best= 5.10
+ 396/500   analyze actual= 5.10 best= 5.10
+ 397/500   analyze actual= 5.10 best= 5.10
+ 398/500   analyze actual= 5.10 best= 5.10
+ 399/500   analyze actual= 5.10 best= 5.10
+ 400/500   analyze actual= 5.10 best= 5.10
+ 401/500   analyze actual= 5.10 best= 5.10
+ 402/500   analyze actual= 5.10 best= 5.10
+ 403/500   analyze actual= 5.10 best= 5.10
+ 404/500   analyze actual= 5.10 best= 5.10
+ 405/500   analyze actual= 5.10 best= 5.10
+ 406/500   analyze actual= 5.10 best= 5.10
+ 407/500   analyze actual= 5.10 best= 5.10
+ 408/500   analyze actual= 5.10 best= 5.10
+ 409/500   analyze actual= 5.10 best= 5.10
+ 410/500   analyze actual= 5.10 best= 5.10
+ 411/500   analyze actual= 5.10 best= 5.10
+ 412/500   analyze actual= 5.10 best= 5.10
+ 413/500   analyze actual= 5.11 best= 5.10
+ 414/500   analyze actual= 5.11 best= 5.10
+ 415/500   analyze actual= 5.10 best= 5.10
+ 416/500   analyze actual= 5.10 best= 5.10
+ 417/500   analyze actual= 5.10 best= 5.10
+ 418/500   analyze actual= 5.10 best= 5.10
+ 419/500   analyze actual= 5.10 best= 5.10
+ 420/500   analyze actual= 5.10 best= 5.10
+ 421/500   analyze actual= 5.10 best= 5.10
+ 422/500   analyze actual= 5.10 best= 5.10
+ 423/500   analyze actual= 5.10 best= 5.10
+ 424/500   analyze actual= 5.10 best= 5.10
+ 425/500   analyze actual= 5.10 best= 5.10
+ 426/500   analyze actual= 5.10 best= 5.10
+ 427/500   analyze actual= 5.10 best= 5.10
+ 428/500   analyze actual= 5.10 best= 5.10
+ 429/500   analyze actual= 5.10 best= 5.10
+ 430/500   analyze actual= 5.10 best= 5.10
+ 431/500   analyze actual= 5.10 best= 5.10
+ 432/500   analyze actual= 5.10 best= 5.10
+ 433/500   analyze actual= 5.10 best= 5.10
+ 434/500   analyze actual= 5.10 best= 5.10
+ 435/500   analyze actual= 5.10 best= 5.10
+ 436/500   analyze actual= 5.10 best= 5.10
+ 437/500   analyze actual= 5.10 best= 5.10
+ 438/500   analyze actual= 5.10 best= 5.10
+ 439/500   analyze actual= 5.10 best= 5.10
+ 440/500   analyze actual= 5.10 best= 5.10
+ 441/500   analyze actual= 5.10 best= 5.10
+ 442/500   analyze actual= 5.10 best= 5.10
+ 443/500   analyze actual= 5.10 best= 5.10
+ 444/500   analyze actual= 5.10 best= 5.10
+ 445/500   analyze actual= 5.10 best= 5.10
+ 446/500   analyze actual= 5.10 best= 5.10
+ 447/500   analyze actual= 5.10 best= 5.10
+ 448/500   analyze actual= 5.10 best= 5.10
+ 449/500   analyze actual= 5.10 best= 5.10
+ 450/500   analyze actual= 5.10 best= 5.10
+ 451/500   analyze actual= 5.10 best= 5.10
+ 452/500   analyze actual= 5.10 best= 5.10
+ 453/500   analyze actual= 5.10 best= 5.10
+ 454/500   analyze actual= 5.10 best= 5.10
+ 455/500   analyze actual= 5.10 best= 5.10
+ 456/500   analyze actual= 5.10 best= 5.10
+ 457/500   analyze actual= 5.10 best= 5.10
+ 458/500   analyze actual= 5.10 best= 5.10
+ 459/500   analyze actual= 5.10 best= 5.10
+ 460/500   analyze actual= 5.10 best= 5.10
+ 461/500   analyze actual= 5.10 best= 5.10
+ 462/500   analyze actual= 5.10 best= 5.10
+ 463/500   analyze actual= 5.10 best= 5.10
+ 464/500   analyze actual= 5.10 best= 5.10
+ 465/500   analyze actual= 5.10 best= 5.10
+ 466/500   analyze actual= 5.10 best= 5.10
+ 467/500   analyze actual= 5.10 best= 5.10
+ 468/500   analyze actual= 5.10 best= 5.10
+ 469/500   analyze actual= 5.10 best= 5.10
+ 470/500   analyze actual= 5.10 best= 5.10
+ 471/500   analyze actual= 5.10 best= 5.10
+ 472/500   analyze actual= 5.10 best= 5.10
+ 473/500   analyze actual= 5.10 best= 5.10
+ 474/500   analyze actual= 5.10 best= 5.10
+ 475/500   analyze actual= 5.10 best= 5.10
+ 476/500   analyze actual= 5.10 best= 5.10
+ 477/500   analyze actual= 5.10 best= 5.10
+ 478/500   analyze actual= 5.10 best= 5.10
+ 479/500   analyze actual= 5.10 best= 5.10
+ 480/500   analyze actual= 5.10 best= 5.10
+ 481/500   analyze actual= 5.10 best= 5.10
+ 482/500   analyze actual= 5.10 best= 5.10
+ 483/500   analyze actual= 5.10 best= 5.10
+ 484/500   analyze actual= 5.10 best= 5.10
+ 485/500   analyze actual= 5.10 best= 5.10
+ 486/500   analyze actual= 5.10 best= 5.10
+ 487/500   analyze actual= 5.10 best= 5.10
+ 488/500   analyze actual= 5.10 best= 5.10
+ 489/500   analyze actual= 5.10 best= 5.10
+ 490/500   analyze actual= 5.10 best= 5.10
+ 491/500   analyze actual= 5.10 best= 5.10
+ 492/500   analyze actual= 5.10 best= 5.10
+ 493/500   analyze actual= 5.10 best= 5.10
+ 494/500   analyze actual= 5.10 best= 5.10
+ 495/500   analyze actual= 5.10 best= 5.10
+ 496/500   analyze actual= 5.10 best= 5.10
+ 497/500   analyze actual= 5.10 best= 5.10
+ 498/500   analyze actual= 5.10 best= 5.10
+ 499/500   analyze actual= 5.10 best= 5.10
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+       Optimization finished:
+       Maximum iteration count reached
+ 500/500   analyze actual= 5.10 best= 5.10
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [tune_iris]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [iris_2]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [iris_3]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [iris_4]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [test_3_half]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [tune_iris]
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+            - Initialize [test_3_half]
+ 501/500   analyze actual= 5.10 best= 5.10
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+       Elapsed time = 548.534 seconds
+
+INFO in project [test_1.test_3]
+       in input file "test_1.test_3"
+       Info in mWave Wizard (PID 12744):
+       Used memory at simulation end = 74645504 Peak memory = 121311232

@@ -29,13 +29,15 @@ def extract_values(file_path):
             
             if "=" in line:
                 var_name, var_value = line.split("=", 1)
-                var_name = re.sub(r'^[^a-zA-Z]+', '', var_name.strip())  # Remove any prefix
-                var_name = re.sub(r'^.*_', '', var_name)  # Keep only base variable name
+                var_name = var_name.strip()
                 var_value = var_value.strip()
                 
-                if var_name in values_dict:
+                # Remove prefixes and match variables correctly
+                var_name_cleaned = re.sub(r'^filter_\d+_', '', var_name)  # Remove numeric filter prefixes
+                
+                if var_name_cleaned in values_dict:
                     try:
-                        values_dict[var_name] = float(var_value)
+                        values_dict[var_name_cleaned] = float(var_value)
                     except ValueError:
                         continue  # Ignore non-numeric values
     
@@ -50,11 +52,12 @@ def convert_bva_to_csv(directory):
         if file_name.endswith(".bva"):
             file_path = os.path.join(directory, file_name)
             df = extract_values(file_path)
-            csv_file_name = os.path.splitext(file_name)[0] + ".csv"
+            csv_file_name = os.path.splitext(file_name)[0] + "_bva.csv"
             csv_file_path = os.path.join(output_directory, csv_file_name)
             df.to_csv(csv_file_path, index=False)
             print(f"Converted {file_name} to {csv_file_name} and saved in {output_directory}")
 
 if __name__ == "__main__":
-    directory = r"G:\waveguide_ai\wizard_projects\bva_files"  # Change this to the directory containing .bva files
+    directory = r"/home/raavi/research/ai/wizard_projects/bva_files"
+    #directory = r"G:\waveguide_ai\wizard_projects\bva_files"
     convert_bva_to_csv(directory)

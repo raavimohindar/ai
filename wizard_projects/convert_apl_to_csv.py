@@ -49,7 +49,7 @@ def convert_apl_to_csv(directory):
             file_path = os.path.join(directory, file_name)
             df = extract_s_parameters(file_path)
             if df is not None:
-                csv_file_name = os.path.splitext(file_name)[0] + ".csv"
+                csv_file_name = os.path.splitext(file_name)[0] + "_apl.csv"
                 csv_file_path = os.path.join(output_directory, csv_file_name)
                 df.to_csv(csv_file_path, index=False)
                 print(f"Converted {file_name} to {csv_file_name} and saved in {output_directory}")
@@ -57,5 +57,6 @@ def convert_apl_to_csv(directory):
                 print(f"Failed to extract data from {file_name}")
 
 if __name__ == "__main__":
-    directory = r"G:\waveguide_ai\wizard_projects\apl_files"  # Change this to the directory containing .apl files
+    directory = r"/home/raavi/research/ai/wizard_projects/apl_files"
+    #directory = r"G:\waveguide_ai\wizard_projects\apl_files"
     convert_apl_to_csv(directory)

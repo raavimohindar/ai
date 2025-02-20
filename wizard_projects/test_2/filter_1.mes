@@ -1,0 +1,586 @@
+
+INFO in project [test_2]
+       in input file "test_2"
+       load_ini_file:
+       element_path = C:\Users\mraavimohanrao\AppData\Roaming\Mician\mWave Wizard 12.0\Ini\element.ini
+
+INFO in project [test_2]
+       in input file "test_2"
+       load_ini_file:
+       bessel_path  = C:\Program Files (x86)\Mician\mWave Wizard 12.0\Bin\bessel.dat
+
+INFO in project [test_2]
+       in input file "test_2"
+       load_ini_file:
+       font_path    = C:\Program Files (x86)\Mician\mWave Wizard 12.0\Bin\font.dat
+
+INFO in project [test_2]
+       in input file "test_2"
+       ----------------------------------------------------------------------
+
+INFO in project [test_2]
+       in input file "test_2"
+       mWaveWizard 12.0 (64 bit HASP key edition) running from DLL on 14 of 14 physical cores
+
+INFO in project [test_2]
+       in input file "test_2"
+       ----------------------------------------------------------------------
+
+INFO in project [test_2]
+       in input file "test_2"
+       Optimization of [filter_1]
+
+INFO in project [test_2]
+       in input file "test_2"
+       ----------------------------------------------------------------------
+
+INFO in project [test_2]
+       in input file "test_2"
+
+INFO in project [test_2]
+       in input file "test_2"
+       Frequency range = [14.500000 GHz - 18.000000 GHz ] with 300 steps
+
+INFO in project [test_2]
+       in input file "test_2"
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+       Initializing circuit: [filter_1_half]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+         - Initializing Nodes
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+         - Initializing elements
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Initialize [port]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Initialize [tune_iris]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Initialize [iris_2]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Initialize [iris_3]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Initialize [iris_4]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Initialize [port]
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+         - Initializing waveguides
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Waveguide at node 1 and 2
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Waveguide at node 3 and 4
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Waveguide at node 5 and 6
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Waveguide at node 7 and 8
+
+INFO in project [test_2.filter_1_half]
+       in input file "test_2.filter_1_half"
+            - Waveguide at node 9 and 10
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+       Initializing circuit: [filter_1]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+         - Initializing Nodes
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+         - Initializing elements
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [port]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [filter_1_half]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [filter_1_half]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [port]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+         - Initializing waveguides
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Waveguide at node 1 and 2
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Waveguide at node 3 and 4
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Waveguide at node 5 and 6
+ 0/500     analyze actual= 352.87 best= 352.87
+ 1/500     analyze actual= 353.14 best= 352.87
+ 2/500     analyze actual= 352.80 best= 352.80
+ 3/500     analyze actual= 351.15 best= 351.15
+ 4/500     analyze actual= 354.43 best= 351.15
+ 5/500     analyze actual= 318.62 best= 318.62
+ 6/500     analyze actual= 322.05 best= 318.62
+ 7/500     analyze actual= 315.13 best= 315.13
+ 8/500     analyze actual= 245.18 best= 245.18
+ 9/500     analyze actual= 246.94 best= 245.18
+ 10/500    analyze actual= 243.37 best= 243.37
+ 11/500    analyze actual= 242.45 best= 242.45
+ 12/500    analyze actual= 243.01 best= 242.45
+ 13/500    analyze actual= 247.84 best= 242.45
+ 14/500    analyze actual= 242.14 best= 242.14
+ 15/500    analyze actual= 222.60 best= 222.60
+ 16/500    analyze actual= 264.39 best= 222.60
+ 17/500    analyze actual= 259.78 best= 222.60
+ 18/500    analyze actual= 209.11 best= 209.11
+ 19/500    analyze actual= 215.32 best= 209.11
+ 20/500    analyze actual= 232.35 best= 209.11
+ 21/500    analyze actual= 206.30 best= 206.30
+ 22/500    analyze actual= 210.45 best= 206.30
+ 23/500    analyze actual= 210.37 best= 206.30
+ 24/500    analyze actual= 206.30 best= 206.30
+ 25/500    analyze actual= 290.38 best= 206.30
+ 26/500    analyze actual= 200.51 best= 200.51
+ 27/500    analyze actual= 354.24 best= 200.51
+ 28/500    analyze actual= 324.37 best= 200.51
+ 29/500    analyze actual= 193.94 best= 193.94
+ 30/500    analyze actual= 174.15 best= 174.15
+ 31/500    analyze actual= 216.35 best= 174.15
+ 32/500    analyze actual= 142.75 best= 142.75
+ 33/500    analyze actual= 143.02 best= 142.75
+ 34/500    analyze actual= 153.52 best= 142.75
+ 35/500    analyze actual= 141.26 best= 141.26
+ 36/500    analyze actual= 105.94 best= 105.94
+ 37/500    analyze actual= 179.08 best= 105.94
+ 38/500    analyze actual= 54.25 best= 54.25
+ 39/500    analyze actual= 44.55 best= 44.55
+ 40/500    analyze actual= 92.38 best= 44.55
+ 41/500    analyze actual= 45.50 best= 44.55
+ 42/500    analyze actual= 94.11 best= 44.55
+ 43/500    analyze actual= 17.27 best= 17.27
+ 44/500    analyze actual= 22.50 best= 17.27
+ 45/500    analyze actual= 116.62 best= 17.27
+ 46/500    analyze actual= 40.09 best= 17.27
+ 47/500    analyze actual= 9.97 best= 9.97
+ 48/500    analyze actual= 82.70 best= 9.97
+ 49/500    analyze actual= 28.71 best= 9.97
+ 50/500    analyze actual= 7.99 best= 7.99
+ 51/500    analyze actual= 106.69 best= 7.99
+ 52/500    analyze actual= 71.73 best= 7.99
+ 53/500    analyze actual= 5.92 best= 5.92
+ 54/500    analyze actual= 368.48 best= 5.92
+ 55/500    analyze actual= 76.05 best= 5.92
+ 56/500    analyze actual= 11.85 best= 5.92
+ 57/500    analyze actual= 5.97 best= 5.92
+ 58/500    analyze actual= 141.86 best= 5.92
+ 59/500    analyze actual= 15.50 best= 5.92
+ 60/500    analyze actual= 7.10 best= 5.92
+ 61/500    analyze actual= 5.97 best= 5.92
+ 62/500    analyze actual= 17.57 best= 5.92
+ 63/500    analyze actual= 8.77 best= 5.92
+ 64/500    analyze actual= 5.53 best= 5.53
+ 65/500    analyze actual= 201.96 best= 5.53
+ 66/500    analyze actual= 3.99 best= 3.99
+ 67/500    analyze actual= 161.11 best= 3.99
+ 68/500    analyze actual= 10.84 best= 3.99
+ 69/500    analyze actual= 3.80 best= 3.80
+ 70/500    analyze actual= 205.84 best= 3.80
+ 71/500    analyze actual= 23.75 best= 3.80
+ 72/500    analyze actual= 6.39 best= 3.80
+ 73/500    analyze actual= 3.96 best= 3.80
+ 74/500    analyze actual= 3.81 best= 3.80
+ 75/500    analyze actual= 4.23 best= 3.80
+ 76/500    analyze actual= 4.56 best= 3.80
+ 77/500    analyze actual= 3.80 best= 3.80
+ 78/500    analyze actual= 38.39 best= 3.80
+ 79/500    analyze actual= 21.44 best= 3.80
+ 80/500    analyze actual= 3.98 best= 3.80
+ 81/500    analyze actual= 3.67 best= 3.67
+ 82/500    analyze actual= 3.81 best= 3.67
+ 83/500    analyze actual= 3.81 best= 3.67
+ 84/500    analyze actual= 3.67 best= 3.67
+ 85/500    analyze actual= 28.24 best= 3.67
+ 86/500    analyze actual= 17.13 best= 3.67
+ 87/500    analyze actual= 3.24 best= 3.24
+ 88/500    analyze actual= 3.48 best= 3.24
+ 89/500    analyze actual= 3.43 best= 3.24
+ 90/500    analyze actual= 3.23 best= 3.23
+ 91/500    analyze actual= 3.20 best= 3.20
+ 92/500    analyze actual= 3.29 best= 3.20
+ 93/500    analyze actual= 3.20 best= 3.20
+ 94/500    analyze actual= 3.47 best= 3.20
+ 95/500    analyze actual= 3.06 best= 3.06
+ 96/500    analyze actual= 3.02 best= 3.02
+ 97/500    analyze actual= 3.04 best= 3.02
+ 98/500    analyze actual= 3.03 best= 3.02
+ 99/500    analyze actual= 3.02 best= 3.02
+ 100/500   analyze actual= 2.96 best= 2.96
+ 101/500   analyze actual= 3.14 best= 2.96
+ 102/500   analyze actual= 2.95 best= 2.95
+ 103/500   analyze actual= 2.92 best= 2.92
+ 104/500   analyze actual= 2.98 best= 2.92
+ 105/500   analyze actual= 2.82 best= 2.82
+ 106/500   analyze actual= 2.94 best= 2.82
+ 107/500   analyze actual= 2.73 best= 2.73
+ 108/500   analyze actual= 2.36 best= 2.36
+ 109/500   analyze actual= 2.39 best= 2.36
+ 110/500   analyze actual= 2.34 best= 2.34
+ 111/500   analyze actual= 2.33 best= 2.33
+ 112/500   analyze actual= 2.40 best= 2.33
+ 113/500   analyze actual= 2.27 best= 2.27
+ 114/500   analyze actual= 2.09 best= 2.09
+ 115/500   analyze actual= 2.11 best= 2.09
+ 116/500   analyze actual= 2.08 best= 2.08
+ 117/500   analyze actual= 1.89 best= 1.89
+ 118/500   analyze actual= 1.91 best= 1.89
+ 119/500   analyze actual= 1.88 best= 1.88
+ 120/500   analyze actual= 1.82 best= 1.82
+ 121/500   analyze actual= 1.82 best= 1.82
+ 122/500   analyze actual= 1.81 best= 1.81
+ 123/500   analyze actual= 1.81 best= 1.81
+ 124/500   analyze actual= 1.74 best= 1.74
+ 125/500   analyze actual= 1.93 best= 1.74
+ 126/500   analyze actual= 1.71 best= 1.71
+ 127/500   analyze actual= 2.05 best= 1.71
+ 128/500   analyze actual= 2.34 best= 1.71
+ 129/500   analyze actual= 1.75 best= 1.71
+ 130/500   analyze actual= 1.91 best= 1.71
+ 131/500   analyze actual= 1.72 best= 1.71
+ 132/500   analyze actual= 1.72 best= 1.71
+ 133/500   analyze actual= 2.21 best= 1.71
+ 134/500   analyze actual= 1.95 best= 1.71
+ 135/500   analyze actual= 1.71 best= 1.71
+ 136/500   analyze actual= 1.92 best= 1.71
+ 137/500   analyze actual= 1.54 best= 1.54
+ 138/500   analyze actual= 1.42 best= 1.42
+ 139/500   analyze actual= 1.50 best= 1.42
+ 140/500   analyze actual= 1.37 best= 1.37
+ 141/500   analyze actual= 1.36 best= 1.36
+ 142/500   analyze actual= 1.36 best= 1.36
+ 143/500   analyze actual= 1.36 best= 1.36
+ 144/500   analyze actual= 1.36 best= 1.36
+ 145/500   analyze actual= 1.40 best= 1.36
+ 146/500   analyze actual= 1.32 best= 1.32
+ 147/500   analyze actual= 1.26 best= 1.26
+ 148/500   analyze actual= 1.23 best= 1.23
+ 149/500   analyze actual= 1.34 best= 1.23
+ 150/500   analyze actual= 1.21 best= 1.21
+ 151/500   analyze actual= 1.20 best= 1.20
+ 152/500   analyze actual= 1.21 best= 1.20
+ 153/500   analyze actual= 1.20 best= 1.20
+ 154/500   analyze actual= 1.21 best= 1.20
+ 155/500   analyze actual= 1.20 best= 1.20
+ 156/500   analyze actual= 1.20 best= 1.20
+ 157/500   analyze actual= 1.23 best= 1.20
+ 158/500   analyze actual= 1.19 best= 1.19
+ 159/500   analyze actual= 1.18 best= 1.18
+ 160/500   analyze actual= 1.37 best= 1.18
+ 161/500   analyze actual= 1.04 best= 1.04
+ 162/500   analyze actual= 0.89 best= 0.89
+ 163/500   analyze actual= 0.90 best= 0.89
+ 164/500   analyze actual= 0.91 best= 0.89
+ 165/500   analyze actual= 0.89 best= 0.89
+ 166/500   analyze actual= 0.95 best= 0.89
+ 167/500   analyze actual= 0.86 best= 0.86
+ 168/500   analyze actual= 0.86 best= 0.86
+ 169/500   analyze actual= 0.89 best= 0.86
+ 170/500   analyze actual= 0.84 best= 0.84
+ 171/500   analyze actual= 0.79 best= 0.79
+ 172/500   analyze actual= 0.77 best= 0.77
+ 173/500   analyze actual= 0.85 best= 0.77
+ 174/500   analyze actual= 0.77 best= 0.77
+ 175/500   analyze actual= 0.78 best= 0.77
+ 176/500   analyze actual= 0.78 best= 0.77
+ 177/500   analyze actual= 0.77 best= 0.77
+ 178/500   analyze actual= 0.83 best= 0.77
+ 179/500   analyze actual= 0.74 best= 0.74
+ 180/500   analyze actual= 0.72 best= 0.72
+ 181/500   analyze actual= 0.72 best= 0.72
+ 182/500   analyze actual= 0.72 best= 0.72
+ 183/500   analyze actual= 0.72 best= 0.72
+ 184/500   analyze actual= 1.31 best= 0.72
+ 185/500   analyze actual= 1.10 best= 0.72
+ 186/500   analyze actual= 0.72 best= 0.72
+ 187/500   analyze actual= 0.90 best= 0.72
+ 188/500   analyze actual= 0.81 best= 0.72
+ 189/500   analyze actual= 0.71 best= 0.71
+ 190/500   analyze actual= 0.78 best= 0.71
+ 191/500   analyze actual= 0.66 best= 0.66
+ 192/500   analyze actual= 0.62 best= 0.62
+ 193/500   analyze actual= 0.64 best= 0.62
+ 194/500   analyze actual= 0.62 best= 0.62
+ 195/500   analyze actual= 0.62 best= 0.62
+ 196/500   analyze actual= 0.60 best= 0.60
+ 197/500   analyze actual= 0.70 best= 0.60
+ 198/500   analyze actual= 0.60 best= 0.60
+ 199/500   analyze actual= 0.60 best= 0.60
+ 200/500   analyze actual= 0.60 best= 0.60
+ 201/500   analyze actual= 0.60 best= 0.60
+ 202/500   analyze actual= 0.61 best= 0.60
+ 203/500   analyze actual= 0.58 best= 0.58
+ 204/500   analyze actual= 0.57 best= 0.57
+ 205/500   analyze actual= 0.57 best= 0.57
+ 206/500   analyze actual= 0.57 best= 0.57
+ 207/500   analyze actual= 0.57 best= 0.57
+ 208/500   analyze actual= 0.56 best= 0.56
+ 209/500   analyze actual= 0.57 best= 0.56
+ 210/500   analyze actual= 0.56 best= 0.56
+ 211/500   analyze actual= 0.57 best= 0.56
+ 212/500   analyze actual= 0.56 best= 0.56
+ 213/500   analyze actual= 0.56 best= 0.56
+ 214/500   analyze actual= 0.61 best= 0.56
+ 215/500   analyze actual= 0.53 best= 0.53
+ 216/500   analyze actual= 0.53 best= 0.53
+ 217/500   analyze actual= 0.54 best= 0.53
+ 218/500   analyze actual= 0.53 best= 0.53
+ 219/500   analyze actual= 0.52 best= 0.52
+ 220/500   analyze actual= 0.52 best= 0.52
+ 221/500   analyze actual= 0.58 best= 0.52
+ 222/500   analyze actual= 0.51 best= 0.51
+ 223/500   analyze actual= 0.55 best= 0.51
+ 224/500   analyze actual= 0.49 best= 0.49
+ 225/500   analyze actual= 0.48 best= 0.48
+ 226/500   analyze actual= 0.49 best= 0.48
+ 227/500   analyze actual= 0.47 best= 0.47
+ 228/500   analyze actual= 0.46 best= 0.46
+ 229/500   analyze actual= 0.46 best= 0.46
+ 230/500   analyze actual= 0.46 best= 0.46
+ 231/500   analyze actual= 0.46 best= 0.46
+ 232/500   analyze actual= 0.47 best= 0.46
+ 233/500   analyze actual= 0.45 best= 0.45
+ 234/500   analyze actual= 0.45 best= 0.45
+ 235/500   analyze actual= 0.45 best= 0.45
+ 236/500   analyze actual= 0.46 best= 0.45
+ 237/500   analyze actual= 0.45 best= 0.45
+ 238/500   analyze actual= 0.45 best= 0.45
+ 239/500   analyze actual= 0.45 best= 0.45
+ 240/500   analyze actual= 0.45 best= 0.45
+ 241/500   analyze actual= 0.81 best= 0.45
+ 242/500   analyze actual= 0.64 best= 0.45
+ 243/500   analyze actual= 0.44 best= 0.44
+ 244/500   analyze actual= 0.44 best= 0.44
+ 245/500   analyze actual= 0.48 best= 0.44
+ 246/500   analyze actual= 0.44 best= 0.44
+ 247/500   analyze actual= 0.52 best= 0.44
+ 248/500   analyze actual= 0.40 best= 0.40
+ 249/500   analyze actual= 0.40 best= 0.40
+ 250/500   analyze actual= 0.43 best= 0.40
+ 251/500   analyze actual= 0.39 best= 0.39
+ 252/500   analyze actual= 0.39 best= 0.39
+ 253/500   analyze actual= 0.39 best= 0.39
+ 254/500   analyze actual= 0.39 best= 0.39
+ 255/500   analyze actual= 0.39 best= 0.39
+ 256/500   analyze actual= 0.41 best= 0.39
+ 257/500   analyze actual= 0.37 best= 0.37
+ 258/500   analyze actual= 0.37 best= 0.37
+ 259/500   analyze actual= 0.38 best= 0.37
+ 260/500   analyze actual= 0.37 best= 0.37
+ 261/500   analyze actual= 0.37 best= 0.37
+ 262/500   analyze actual= 0.45 best= 0.37
+ 263/500   analyze actual= 0.42 best= 0.37
+ 264/500   analyze actual= 0.37 best= 0.37
+ 265/500   analyze actual= 0.39 best= 0.37
+ 266/500   analyze actual= 0.36 best= 0.36
+ 267/500   analyze actual= 0.36 best= 0.36
+ 268/500   analyze actual= 0.35 best= 0.35
+ 269/500   analyze actual= 0.41 best= 0.35
+ 270/500   analyze actual= 0.35 best= 0.35
+ 271/500   analyze actual= 0.46 best= 0.35
+ 272/500   analyze actual= 0.32 best= 0.32
+ 273/500   analyze actual= 0.32 best= 0.32
+ 274/500   analyze actual= 0.37 best= 0.32
+ 275/500   analyze actual= 0.31 best= 0.31
+ 276/500   analyze actual= 0.31 best= 0.31
+ 277/500   analyze actual= 0.36 best= 0.31
+ 278/500   analyze actual= 0.31 best= 0.31
+ 279/500   analyze actual= 0.30 best= 0.30
+ 280/500   analyze actual= 0.32 best= 0.30
+ 281/500   analyze actual= 0.29 best= 0.29
+ 282/500   analyze actual= 0.28 best= 0.28
+ 283/500   analyze actual= 0.29 best= 0.28
+ 284/500   analyze actual= 0.28 best= 0.28
+ 285/500   analyze actual= 0.28 best= 0.28
+ 286/500   analyze actual= 0.31 best= 0.28
+ 287/500   analyze actual= 0.27 best= 0.27
+ 288/500   analyze actual= 0.27 best= 0.27
+ 289/500   analyze actual= 0.29 best= 0.27
+ 290/500   analyze actual= 0.27 best= 0.27
+ 291/500   analyze actual= 0.27 best= 0.27
+ 292/500   analyze actual= 0.24 best= 0.24
+ 293/500   analyze actual= 0.31 best= 0.24
+ 294/500   analyze actual= 0.20 best= 0.20
+ 295/500   analyze actual= 0.20 best= 0.20
+ 296/500   analyze actual= 0.23 best= 0.20
+ 297/500   analyze actual= 0.20 best= 0.20
+ 298/500   analyze actual= 0.23 best= 0.20
+ 299/500   analyze actual= 0.24 best= 0.20
+ 300/500   analyze actual= 0.20 best= 0.20
+ 301/500   analyze actual= 0.20 best= 0.20
+ 302/500   analyze actual= 0.19 best= 0.19
+ 303/500   analyze actual= 0.19 best= 0.19
+ 304/500   analyze actual= 0.20 best= 0.19
+ 305/500   analyze actual= 0.19 best= 0.19
+ 306/500   analyze actual= 0.19 best= 0.19
+ 307/500   analyze actual= 0.19 best= 0.19
+ 308/500   analyze actual= 0.19 best= 0.19
+ 309/500   analyze actual= 0.17 best= 0.17
+ 310/500   analyze actual= 0.18 best= 0.17
+ 311/500   analyze actual= 0.18 best= 0.17
+ 312/500   analyze actual= 0.17 best= 0.17
+ 313/500   analyze actual= 0.42 best= 0.17
+ 314/500   analyze actual= 0.32 best= 0.17
+ 315/500   analyze actual= 0.18 best= 0.17
+ 316/500   analyze actual= 0.17 best= 0.17
+ 317/500   analyze actual= 0.17 best= 0.17
+ 318/500   analyze actual= 0.17 best= 0.17
+ 319/500   analyze actual= 0.17 best= 0.17
+ 320/500   analyze actual= 0.18 best= 0.17
+ 321/500   analyze actual= 0.19 best= 0.17
+ 322/500   analyze actual= 0.17 best= 0.17
+ 323/500   analyze actual= 0.47 best= 0.17
+ 324/500   analyze actual= 0.45 best= 0.17
+ 325/500   analyze actual= 0.17 best= 0.17
+ 326/500   analyze actual= 0.24 best= 0.17
+ 327/500   analyze actual= 0.17 best= 0.17
+ 328/500   analyze actual= 0.17 best= 0.17
+ 329/500   analyze actual= 0.35 best= 0.17
+ 330/500   analyze actual= 0.27 best= 0.17
+ 331/500   analyze actual= 0.16 best= 0.16
+ 332/500   analyze actual= 0.18 best= 0.16
+ 333/500   analyze actual= 0.17 best= 0.16
+ 334/500   analyze actual= 0.16 best= 0.16
+ 335/500   analyze actual= 0.17 best= 0.16
+ 336/500   analyze actual= 0.16 best= 0.16
+ 337/500   analyze actual= 0.16 best= 0.16
+ 338/500   analyze actual= 0.16 best= 0.16
+ 339/500   analyze actual= 0.16 best= 0.16
+ 340/500   analyze actual= 0.16 best= 0.16
+ 341/500   analyze actual= 0.16 best= 0.16
+ 342/500   analyze actual= 0.16 best= 0.16
+ 343/500   analyze actual= 0.16 best= 0.16
+ 344/500   analyze actual= 0.14 best= 0.14
+ 345/500   analyze actual= 0.19 best= 0.14
+ 346/500   analyze actual= 0.14 best= 0.14
+ 347/500   analyze actual= 0.14 best= 0.14
+ 348/500   analyze actual= 0.14 best= 0.14
+ 349/500   analyze actual= 0.14 best= 0.14
+ 350/500   analyze actual= 0.14 best= 0.14
+ 351/500   analyze actual= 0.14 best= 0.14
+ 352/500   analyze actual= 0.14 best= 0.14
+ 353/500   analyze actual= 0.14 best= 0.14
+ 354/500   analyze actual= 0.14 best= 0.14
+ 355/500   analyze actual= 0.14 best= 0.14
+ 356/500   analyze actual= 0.14 best= 0.14
+ 357/500   analyze actual= 0.13 best= 0.13
+ 358/500   analyze actual= 0.13 best= 0.13
+ 359/500   analyze actual= 0.14 best= 0.13
+ 360/500   analyze actual= 0.14 best= 0.13
+ 361/500   analyze actual= 0.13 best= 0.13
+ 362/500   analyze actual= 0.17 best= 0.13
+ 363/500   analyze actual= 0.17 best= 0.13
+ 364/500   analyze actual= 0.13 best= 0.13
+ 365/500   analyze actual= 0.13 best= 0.13
+ 366/500   analyze actual= 0.14 best= 0.13
+ 367/500   analyze actual= 0.13 best= 0.13
+ 368/500   analyze actual= 0.12 best= 0.12
+ 369/500   analyze actual= 0.15 best= 0.12
+ 370/500   analyze actual= 0.12 best= 0.12
+ 371/500   analyze actual= 0.12 best= 0.12
+ 372/500   analyze actual= 0.13 best= 0.12
+ 373/500   analyze actual= 0.11 best= 0.11
+ 374/500   analyze actual= 0.11 best= 0.11
+ 375/500   analyze actual= 0.11 best= 0.11
+ 376/500   analyze actual= 0.11 best= 0.11
+ 377/500   analyze actual= 0.11 best= 0.11
+ 378/500   analyze actual= 0.11 best= 0.11
+ 379/500   analyze actual= 0.11 best= 0.11
+ 380/500   analyze actual= 0.11 best= 0.11
+ 381/500   analyze actual= 0.11 best= 0.11
+ 382/500   analyze actual= 0.11 best= 0.11
+ 383/500   analyze actual= 0.56 best= 0.11
+ 384/500   analyze actual= 0.45 best= 0.11
+ 385/500   analyze actual= 0.11 best= 0.11
+ 386/500   analyze actual= 0.14 best= 0.11
+ 387/500   analyze actual= 0.13 best= 0.11
+ 388/500   analyze actual= 0.11 best= 0.11
+ 389/500   analyze actual= 0.11 best= 0.11
+ 390/500   analyze actual= 0.11 best= 0.11
+ 391/500   analyze actual= 0.11 best= 0.11
+ 392/500   analyze actual= 0.10 best= 0.10
+ 393/500   analyze actual= 0.12 best= 0.10
+ 394/500   analyze actual= 0.10 best= 0.10
+ 395/500   analyze actual= 0.11 best= 0.10
+ 396/500   analyze actual= 0.22 best= 0.10
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+       Optimization finished:
+       Error limit reached
+ 397/500   analyze actual= 0.09 best= 0.09
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [tune_iris]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [iris_2]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [iris_3]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [iris_4]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [filter_1_half]
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+            - Initialize [filter_1_half]
+ 398/500   analyze actual= 0.09 best= 0.09
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+       Elapsed time = 396.317 seconds
+
+INFO in project [test_2.filter_1]
+       in input file "test_2.filter_1"
+       Info in mWave Wizard (PID 14300):
+       Used memory at simulation end = 71016448 Peak memory = 121421824

@@ -1,0 +1,98 @@
+[Filter specifications]
+   distrib =tscheb
+    f_stop_1 =15
+    f_stop_2 =17.5
+    a_stop   =-45
+    f_pass_1 =15.55
+    f_pass_2 =16.55
+    a_pass   =-25
+    f_center =          16.045807
+    l_center =          23.167348
+    beta     =         271.208652
+    order    = 7
+
+[Coefficients]
+    count    = 8
+   coeff(0) =      1.000000000
+   coeff(1) =      0.835770650
+   coeff(2) =      1.407381254
+   coeff(3) =      1.784255285
+   coeff(4) =      1.636763751
+   coeff(5) =      1.784255285
+   coeff(6) =      1.407381254
+   coeff(7) =      0.835770650
+   coeff(8) =      1.000000000
+
+[Inverter values]
+    count    = 7
+   Inv_k(0) =      0.426048479
+   Inv_k(1) =      0.139880029
+   Inv_k(2) =      0.095735008
+   Inv_k(3) =      0.088773564
+   Inv_k(4) =      0.088773564
+   Inv_k(5) =      0.095735008
+   Inv_k(6) =      0.139880029
+   Inv_k(7) =      0.426048479
+
+[Normalized coupling matrix values]
+    count    = 7
+   M(0,1) =      1.093846653
+   M(1,2) =      0.922041697
+   M(2,3) =      0.631052691
+   M(3,4) =      0.585165219
+   M(4,5) =      0.585165219
+   M(5,6) =      0.631052691
+   M(6,7) =      0.922041697
+   M(7,8) =      1.093846653
+
+ [Dimension]
+    frequency =ghz 
+    geometry  =mm   
+    angle     = deg 
+ 
+ [Waveguide values]
+    ar            =15.799
+    b             =7.899
+    m_lambda      =1
+    precision     =5
+    steps         =51
+    nr_irises     = 8
+    nr_resonators = 7
+    tune_min      =2
+    tune_max      =12
+    epsr          =1
+    muer          =1
+ 
+[1.Dimension]
+geometry=mm
+[Element properties]
+Porperty_Count=13
+Netlistname=ir_r1r
+name=tune_iris
+a1=a
+b1=b
+a2=tune
+b2=b
+zl=1
+a0=0
+b0=0
+cuti=70.0
+zpos=0
+discr_plot=0
+n_iso=20
+comment=""
+ [Filter geometries]
+    var_count = 2
+    iris_count = 4
+    len_count = 4
+    tune_1 =   7.952177
+    tune_2 =   5.364274
+    tune_3 =   4.740739
+    tune_4 =   4.624249
+    a =  15.799000
+    b =   7.899000
+    l_1 =   8.972318
+    l_2 =  10.258903
+    l_3 =  10.484449
+    l_4 =  10.516170
+    filter_length =    77.9475108685739     

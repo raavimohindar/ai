@@ -1,0 +1,143 @@
+! µWave Wizard netlist 
+! OUTPUT 
+   .save outputfile "filter_1.out"
+   .export subcircuit filter_1  "filter_1.apl"  symmetrical
+   .monitor optimization
+
+   .plot "s11(h 1 0)(h 1 0)"
+   .plot "s21(h 1 0)(h 1 0)"
+   .plot "s22(h 1 0)(h 1 0)"
+
+   .print standard messages
+
+
+! DIMENSION
+   .default freq_unit=GHz
+   .default geom_unit=mm
+   .default angle_unit=deg
+   .default time_unit=s
+   .default efield_unit=V/m
+   .default hfield_unit=A/m
+   .default power_density_unit=W/m^2
+   .default resistance_unit=Ohm
+   .default capacitance_unit=pF
+   .default inductance_unit=nH
+   .default conductivity_unit=10^6 S/m
+
+! SYMMETRIES
+   .default symmetry_xzpl=e
+   .default symmetry_yzpl=m
+   .default symmetry_xypl=n
+   .default symmetry_plane=h
+   .default symmetry_radial=n
+
+! MATERIAL
+   .default epsr=1
+   .default muer=1
+   .default metal=Ideal
+   .default sigma=INF
+   .default z_wall=(0,0)
+
+! FEM SETTINGS
+   .default discretization=0.5
+   .default refinement=Local
+   .default discretization_3D=1
+   .default refinement_3D=Local
+
+! DEFAULT CUTOFF SETTINGS
+   .default cutoff_evaluation=500
+   .default cutoff_connection=15
+   .default cutoff_waveguide=75
+   .default cutoff_connection_all=0
+   .default cutoff_waveguide_all=0
+   .default adapt_connection=n
+   .set output=only_accessible
+
+! FREQUENCY_SWEEP
+   .calculation_type=Normal max_steps=100 max_error=1E-6 interpolation_path=1 use_modes=Fundamental subcircuit_level=n plot_intermediate_results=None reduced_set=n plot_interval=120
+
+! FREQUENCIES
+   .ac lin 300 14.5 18
+
+! VARIABLES
+   .param var a=15.799
+   .param var b=7.899
+   .param opt filter_1_a2_1=7.97307613895784576 7.05457 8.34978585 !mww$ comment="filter_1_a2_1 is the tunned variable for iris 1."
+   .param opt filter_1_a2_2=5.43191575232723072 5.0960603 5.6324877 !mww$ comment="filter_1_a2_2 is the tunned variable for iris 2."
+   .param opt filter_1_a2_3=4.8486232858782656 4.50370205 4.97777595 !mww$ comment="filter_1_a2_3 is the tunned variable for iris 3."
+   .param opt filter_1_a2_4=4.72688458414146624 4.39303655 4.85546145 !mww$ comment="filter_1_a2_4 is the tunned variable for iris 4."
+   .param opt filter_1_l_1=8.98014067018803712 8.5237021 9.4209339 !mww$ comment="filter_1_l_1 is the length of resonator 1."
+   .param opt filter_1_l_2=10.2603480589880384 9.74595785 10.77184815 !mww$ comment="filter_1_l_2 is the length of resonator 2."
+   .param opt filter_1_l_3=10.4894115436996576 9.96022655 11.00867145 !mww$ comment="filter_1_l_3 is the length of resonator 3."
+   .param opt filter_1_l_4=10.5248953397083392 9.9903615 11.0419785 !mww$ comment="filter_1_l_4 is the length of resonator 4."
+
+! OPTIMIZATIONS
+   .maxtime=120
+   .maxiteration=500
+   .minerror=0.1
+   .optimize name="s21(h 1 0)(h 1 0)" rel="<" value=-45 in=dB start=14.85 stop=15 weight=1
+   .optimize name="s11(h 1 0)(h 1 0)" rel="<" value=-25 in=dB start=15.55 stop=16.55 weight=1
+   .optimize name="s21(h 1 0)(h 1 0)" rel="<" value=-45 in=dB start=17.5 stop=17.675 weight=1
+
+! YIELD ANALYSATION
+   .yield_iteration=100
+   .yield_precision=0.01
+   .yield_limit=0.09022600
+   .yield_distribution=gauss
+   .yield_parameter par=a prec=0.01
+   .yield_parameter par=b prec=0.01
+   .yield_parameter par=filter_1_a2_1 prec=0.01
+   .yield_parameter par=filter_1_a2_2 prec=0.01
+   .yield_parameter par=filter_1_a2_3 prec=0.01
+   .yield_parameter par=filter_1_a2_4 prec=0.01
+   .yield_parameter par=filter_1_l_1 prec=0.01
+   .yield_parameter par=filter_1_l_2 prec=0.01
+   .yield_parameter par=filter_1_l_3 prec=0.01
+   .yield_parameter par=filter_1_l_4 prec=0.01
+   .yield name="s21(h 1 0)(h 1 0)" rel="<" value=-45 in=dB start=14.85 stop=15 weight=1
+   .yield name="s11(h 1 0)(h 1 0)" rel="<" value=-25 in=dB start=15.55 stop=16.55 weight=1
+   .yield name="s21(h 1 0)(h 1 0)" rel="<" value=-45 in=dB start=17.5 stop=17.675 weight=1
+
+! RADIATION
+   .radius_farfield=0
+   .phasecenter=0.0
+   .turn_coord=n
+   .default copolarisation=vert
+   .default crosspolarisation=horiz
+   .field_freq_mask=center
+   .phi_min_2d=0
+   .phi_max_2d=90
+   .phi_cuts_2d=3
+   .theta_min_2d=0
+   .theta_max_2d=180
+   .theta_cuts_2d=181
+   .theta_max_3d=180
+   .phi_cuts_3d=45
+   .theta_cuts_3d=91
+   .analysis=normal
+
+! CIRCUITS
+
+   .SUBCKT filter_1_Half  #1
+     port 1 nr=1 excitation="" freq_mask="" comment="" !mww$ xPos=68 yPos=73 Angle=0
+     emptyw 1 2 name=l_1 neglen=n l=0.0 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=193 yPos=73 Angle=0
+     ir_r1r 2 3 name=tune_iris a1=a b1=b a2=filter_1_a2_1 b2=b zl=1 cuti=70.0 n_iso=20 comment="" 3dfem=n solver=z-direct mesh_morphing=n morph_data_use_disk=none base_function_order=2 second_order_mesh=n nvrmin=24 refine3d=local max_iter=1000 errtol=0.0001 discr3d=1 save_3dmesh=n read_3dmesh=n mesh_file_name="tune_iris@filter_1_half.mesh" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=318 yPos=73 Angle=0
+     emptyw 3 4 name=l_2 neglen=n l=filter_1_l_1 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=443 yPos=73 Angle=0
+     ir_r1r 4 5 name=iris_2 a1=a b1=b a2=filter_1_a2_2 b2=b zl=1 cuti=70.0 n_iso=20 comment="" 3dfem=n solver=z-direct mesh_morphing=n morph_data_use_disk=none base_function_order=2 second_order_mesh=n nvrmin=24 refine3d=local max_iter=1000 errtol=0.0001 discr3d=1 save_3dmesh=n read_3dmesh=n mesh_file_name="iris_2@filter_1_half.mesh" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=568 yPos=73 Angle=0
+     emptyw 5 6 name=l_3 neglen=n l=filter_1_l_2 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=693 yPos=73 Angle=0
+     ir_r1r 6 7 name=iris_3 a1=a b1=b a2=filter_1_a2_3 b2=b zl=1 cuti=70.0 n_iso=20 comment="" 3dfem=n solver=z-direct mesh_morphing=n morph_data_use_disk=none base_function_order=2 second_order_mesh=n nvrmin=24 refine3d=local max_iter=1000 errtol=0.0001 discr3d=1 save_3dmesh=n read_3dmesh=n mesh_file_name="iris_3@filter_1_half.mesh" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=818 yPos=73 Angle=0
+     emptyw 7 8 name=l_4 neglen=n l=filter_1_l_3 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=943 yPos=73 Angle=0
+     ir_r1r 8 9 name=iris_4 a1=a b1=b a2=filter_1_a2_4 b2=b zl=1 cuti=70.0 n_iso=20 comment="" 3dfem=n solver=z-direct mesh_morphing=n morph_data_use_disk=none base_function_order=2 second_order_mesh=n nvrmin=24 refine3d=local max_iter=1000 errtol=0.0001 discr3d=1 save_3dmesh=n read_3dmesh=n mesh_file_name="iris_4@filter_1_half.mesh" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=1068 yPos=73 Angle=0
+     emptyw 9 10 name=l_5 neglen=n l=0.0 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=1193 yPos=73 Angle=0
+     port 10 nr=2 excitation="" freq_mask="" comment="" !mww$ xPos=1318 yPos=73 Angle=180
+   .ENDSUBCKT filter_1_Half
+
+   .CKT filter_1  #0
+     port 1 nr=1 excitation="" freq_mask="" comment="" !mww$ xPos=52 yPos=58 Angle=0
+     emptyw 1 2 name=l_1 neglen=n l=0.0 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=177 yPos=58 Angle=0
+     subckt_2 2 3 name=filter_1_half comment="" !mww$ xPos=302 yPos=58 Angle=0
+     emptyw 3 4 name=l_2 neglen=n l=filter_1_l_4 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=427 yPos=58 Angle=0
+     subckt_2 5 4 name=filter_1_half comment="" !mww$ xPos=552 yPos=58 Angle=180
+     emptyw 5 6 name=l_3 neglen=n l=0.0 n_iso=20 comment="" field_comp=n ftype={h} n_vec=0 omega_t=0 surface_plot=n scalar_plot=n export_fem_solutions=n log_scale=n !mww$ xPos=677 yPos=58 Angle=0
+     port 6 nr=2 excitation="" freq_mask="" comment="" !mww$ xPos=802 yPos=58 Angle=180
+   .ENDCKT filter_1

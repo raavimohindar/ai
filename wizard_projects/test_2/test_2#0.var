@@ -1,0 +1,36 @@
+<VariableSettings>
+  <VersionInformation VersionsNumber="12.000" ProductName="µWave Wizard" ProductVersion="12.0.0.133" MainVersion="12" SubVersion="0" Release="0" Built="133"/>
+  <PreviosValuesList/>
+  <Variables CopyRule="Copy_of*">
+    <Variable Name="a" Type="var" ValueType="Double" Expression="15.799" Maximum="0.05" Minimum="-0.05" Steps="0.1" Comment="" UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="b" Type="var" ValueType="Double" Expression="7.899" Maximum="0.05" Minimum="-0.05" Steps="0.1" Comment="" UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_a2_1" Type="opt" ValueType="Double" Expression="7.152177" Maximum="8.34978585" Minimum="7.05457" Steps="0.1" Comment="filter_1_a2_1 is the tunned variable for iris 1." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_a2_2" Type="opt" ValueType="Double" Expression="5.364274" Maximum="5.6324877" Minimum="5.0960603" Steps="0.1" Comment="filter_1_a2_2 is the tunned variable for iris 2." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_a2_3" Type="opt" ValueType="Double" Expression="4.74073899999999936" Maximum="4.97777595" Minimum="4.50370205" Steps="0.1" Comment="filter_1_a2_3 is the tunned variable for iris 3." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_a2_4" Type="opt" ValueType="Double" Expression="4.624249" Maximum="4.85546145" Minimum="4.39303655" Steps="0.1" Comment="filter_1_a2_4 is the tunned variable for iris 4." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_l_1" Type="opt" ValueType="Double" Expression="8.972318" Maximum="9.4209339" Minimum="8.5237021" Steps="0.1" Comment="filter_1_l_1 is the length of resonator 1." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_l_2" Type="opt" ValueType="Double" Expression="10.258903" Maximum="10.77184815" Minimum="9.74595785" Steps="0.1" Comment="filter_1_l_2 is the length of resonator 2." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_l_3" Type="opt" ValueType="Double" Expression="10.484449" Maximum="11.00867145" Minimum="9.96022655" Steps="0.1" Comment="filter_1_l_3 is the length of resonator 3." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+    <Variable Name="filter_1_l_4" Type="opt" ValueType="Double" Expression="10.5161700000000016" Maximum="11.0419785" Minimum="9.9903615" Steps="0.1" Comment="filter_1_l_4 is the length of resonator 4." UsedInExternalFile="false">
+      <PreviosValuesList/>
+    </Variable>
+  </Variables>
+</VariableSettings>

@@ -1,0 +1,29 @@
+---------------------------------------------------------------------
+ * --- Waveguide data => waveguide of cohn synthesis
+ * --- Rectangular Waveguide
+ 
+   width  in x           =       15.799000 mm  
+   height in y           =        7.899000 mm  
+   length                =        0.000000 mm  
+ 
+   eps_r                 =        1.000000
+   mu_r                  =        1.000000
+ 
+   maximal cutoff        =       17.500000  ghz
+   connection cutoff     =       17.500000  ghz
+ 
+   maximal h-modes       =   1
+   maximal e-modes       =   0
+ 
+   xz-plane              = none           
+   yz-plane              = none           
+   planarity             = none            
+ 
+ 
+ * --- considered modes =            1
+ 
+    no. | wave     x       y  connect    order   |  fc / ghz
+   -----------------------------------------------------------
+      1 |  h       1       0     c          1    |   9.487704
+ 
+ 
